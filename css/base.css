@@ -1,10 +1,11 @@
 :root {
-  --white-color: #F9F9F6;
-  --second-white-color: #F3F1EC;      
-  --primary-color: #785656;       
-  --black-color: #3D2626;
-  --gray-color: #D9D9D9;        
-  --bg-creamy-color: #DED9CF;   
+  --white-color: #FFFFFF;
+  --second-white-color: #F9F9FF;      
+  --primary-color: #00502E;  
+  --secondary-color:  #006B3F;  
+  --brown-color: #C8A766;
+  --light-blue-color: #F1F3FF;
+  --black-color: #141B2B;      
   --error-color: #CB241C;
   --header-h: 64px;
   --footer-h: 80px;

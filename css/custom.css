@@ -427,9 +427,6 @@
     padding: 60px 0;
 }
 
-.social-icon {
-    max-width: 32px;
-}
 
 .footer-container {
     border-bottom: 1px solid var(--gray-color);
@@ -440,6 +437,11 @@
     aspect-ratio: 445 / 90;
     max-width: 304px;
     min-height: 90px;
+}
+
+.footer-icon__container{
+    max-width: 10px;
+    max-height: 20px;
 }
 
 /* css roll to top */
@@ -483,7 +485,7 @@
 .pagenotfound-container a {
     padding: 15px 30px;
     border-radius: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--white-color);
     transition: all 0.4s ease;
 }
