@@ -1030,7 +1030,7 @@ document.addEventListener("DOMContentLoaded", () => {
         prevEl: '.swiper-button-prev',
       },
       pagination: {
-        el: '.custom-dots',
+        el: '.swiper-pagination',
         clickable: true,
       },
       breakpoints: {

@@ -133,12 +133,6 @@
     max-width: 48px;
 }
 
-.features-section__item {}
-
-.features-section__icon-box {}
-
-.features-section__icon {}
-
 .features-section__item-subtitle {
     font-size: calc(var(--font-size-base) - 5px);
 }
@@ -150,6 +144,20 @@
 
 .features-section__item-desc {
     font-size: calc(var(--font-size-base) - 3px);
+}
+
+.products-section__title{
+    font-size: calc(var(--font-size-base) + 24px);
+    font-weight: 500;
+}
+
+.technology-section__right{
+    aspect-ratio: 686 / 426;
+}
+
+.technology-card__icon-box{
+    max-width: 40px;
+    max-height: 40px;
 }
 
 /* css CTA */
