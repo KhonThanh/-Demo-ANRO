@@ -400,11 +400,11 @@ function initSwiperSlider({
     const wrapper = container.querySelector('.swiper-wrapper');
     if (!wrapper) return;
 
-    // 2. Khôi phục DOM gốc (phục vụ Re-init hoặc Resize)
-    if (!container.dataset.originalHtml) {
-      container.dataset.originalHtml = wrapper.innerHTML;
+    // 2. Khôi phục DOM gốc (Đã sửa: Lưu trực tiếp vào JS Object property để không bị hiện lên HTML)
+    if (!container._originalHtml) {
+      container._originalHtml = wrapper.innerHTML;
     } else {
-      wrapper.innerHTML = container.dataset.originalHtml;
+      wrapper.innerHTML = container._originalHtml;
     }
 
     // 3. Grid layout thủ công (autoGroupRows) nếu có
