@@ -232,8 +232,6 @@
 .badge-count { padding: 2px 6px; }
 
 .watermark-number { font-size: 140px; color: rgba(0, 0, 0, 0.02); right: -10px; top: -20px; line-height: 1; pointer-events: none; }
-.box-45 { width: 45px; height: 45px; }
-.icon-img-24 { width: 24px; height: 24px; }
 
 
 @keyframes skeleton-shimmer {
