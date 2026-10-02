@@ -4,202 +4,409 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VĂN HÓA NGHỆ THUẬT NGHỆ HÀ | Liên hệ</title>
+    <title>ANRO Rice - Liên Hệ & Đối Tác</title>
     <link rel="icon" type="image/png" href="./img/logo/logo-favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- <link rel="stylesheet" href="../css/style.min.css"> -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/utility.css">
     <link rel="stylesheet" href="./css/swiper-custom.css">
-
+    <link rel="stylesheet" href="./css/effect-web.css">
 </head>
 
 <body>
-    <header class="flex center-ver bg-white" id="header" data-include="./component/header.html"></header>
+    <header class="header-section flex-col bg-white" data-include="./component/header.html"></header>
+
     <main>
-         <section class="flex bg-gray container-f bg-white-secondary">
+        <!-- Breadcrumb / Bar -->
+        <section class="flex bg-gray">
             <div class="container-l nav-bar__container">
                 <a href="javascript:void(0)" class="nav-bar__item">Trang chủ</a>
                 <a href="javascript:void(0)" class="nav-bar__item">Liên hệ</a>
             </div>
         </section>
-        <section class="container-padding">
-            <div class="container-l flex flex-col gap-30">
-                <div class="flex gap-20 contact-layout flex-wrap">
-                    <div class="contact-sidebar flex flex-col gap-30 col-section-2">
-                        <div class="bg-white-secondary item-padding-20 border-radius-10 flex flex-col gap-15">
-                            <div class="flex center-ver gap-15">
-                                <div class="contact-avatar__container ratio-1x1 overflow-hidden">
-                                    <img src="./img/avatar/author.png" alt="Nhà văn Dương Thanh Biểu"
-                                        class="img-content">
-                                </div>
-                                <div class="flex flex-col gap-5">
-                                    <h1 class="text-sm bold">Nhà văn Dương Thanh Biểu</h1>
-                                    <div>
-                                        <span class="badge-tag text-xs border-radius-5 text-color-white">Tác giả</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-xs text-color-secondary line-height-16">
-                                Không gian lưu giữ và tiếp nhận ý kiến trao đổi của bạn đọc, đồng đội thời chiến và các
-                                nhà nghiên cứu văn học về tác phẩm, tư liệu lịch sử và các vấn đề công lý, nhân văn.
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-20">
-                            <h2 class="text-sm bold flex center-ver gap-10">
-                                <div class="ratio-1x1 contact-info__icon overflow-hidden">
-                                    <img src="./img/icon/news-mail.svg" class="img-icon" alt="">
-                                </div>
-                                THÔNG TIN KẾT NỐI
-                            </h2>
-                            <div class="flex gap-15 center-ver-start">
-                                <div class="ratio-1x1 contact-info__icon overflow-hidden">
-                                    <img src="./img/icon/contact-mail.svg" class="img-icon" alt="">
-                                </div>
-                                <div class="flex flex-col gap-5">
-                                    <span class="text-xs bold uppercase">THƯ ĐIỆN TỬ TÒA SOẠN</span>
-                                    <a href="mailto:toasoan@duongthanhbieu.vn"
-                                        class="text-xs bold text-color-primary">toasoan@duongthanhbieu.vn</a>
-                                    <a href="mailto:tacgia@duongthanhbieu.vn"
-                                        class="text-xs text-color-deactive">tacgia@duongthanhbieu.vn (Thư riêng tác
-                                        giả)</a>
-                                </div>
-                            </div>
-                            <div class="flex gap-15 center-ver-start">
-                                <div class="ratio-1x1 contact-info__icon overflow-hidden">
-                                    <img src="./img/icon/contact-phone.svg" class="img-icon" alt="">
-                                </div>
-                                <div class="flex flex-col gap-5">
-                                    <span class="text-xs bold uppercase">ĐƯỜNG DÂY TRAO ĐỔI</span>
-                                    <span class="text-xs bold text-color-primary">(+84) 024 3828 8899</span>
-                                    <span class="text-xs text-color-deactive">Giờ tiếp nhận: 08:30 - 17:00 (Thứ Hai đến
-                                        Thứ Sáu)</span>
-                                </div>
-                            </div>
-                            <div class="flex gap-15 center-ver-start">
-                                <div class="ratio-1x1 contact-info__icon overflow-hidden">
-                                    <img src="./img/icon/contact-location.svg" class="img-icon" alt="">
-                                </div>
-                                <div class="flex flex-col gap-5">
-                                    <span class="text-xs bold uppercase">ĐỊA CHỈ TIẾP NHẬN BẢN THẢO</span>
-                                    <span class="text-xs bold">Ban Biên tập Tạp chí Văn học & Nghệ thuật</span>
-                                    <span class="text-xs text-color-deactive">Quận Hoàn Kiếm, Thành phố Hà Nội, Việt
-                                        Nam</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-15 border-top-line padding-top-20">
-                            <span class="text-xs bold uppercase text-color-deactive">MẠNG XÃ HỘI & KÊNH CHUYÊN ĐỀ</span>
-                            <div class="flex gap-10 flex-wrap">
-                                <a href="#"
-                                    class="btn-social-tag bg-white-secondary flex center-ver gap-5 text-xs border-radius-5 item-padding-5-10">
-                                    <span class="bold">f</span> Facebook
-                                </a>
-                                <a href="#"
-                                    class="btn-social-tag bg-white-secondary flex center-ver gap-5 text-xs border-radius-5 item-padding-5-10">
-                                    <span class="bold">Z</span> Zalo Official
-                                </a>
-                            </div>
-                        </div>
 
+        <!-- Hero & Contact Section -->
+        <section class="contact-hero-section container-padding bg-white">
+            <div class="container-l contact-hero-section__container flex flex-col gap-30">
+                <!-- Header Top -->
+                <div class="flex jus-sb center-ver flex-wrap gap-20">
+                    <div class="flex flex-col gap-10">
+                        <span class="hero-section__tag text-sm uppercase text-color-brown bold">ĐỐI TÁC QUYÊN GÓP & KHÁCH HÀNG</span>
+                        <h1 class="contact-hero-section__title text-color-primary">Liên Hệ & Kết Nối Hạt Ngọc Đất Trời</h1>
+                        <p class="contact-hero-section__desc text-color-secondary">
+                            Đồng hành cùng ANRO thực hiện trao gửi giá trị nông sản thuần khiết. Đội ngũ chuyên gia sẵn sàng lắng nghe, tư vấn và hoạch định giải pháp phân phối tối ưu.
+                        </p>
                     </div>
-                    <div class="contact-form-wrapper col-section-2 bg-white-secondary item-padding-30 border-radius-10 flex flex-col gap-10 flex-1">
-                        <div class="flex flex-col gap-20 margin-bottom-20">
-                            <h2 class="text-md bold flex center-ver gap-10 uppercase">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M12 20h9"></path>
-                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                                </svg>
-                                GỬI THƯ TƯ VẤN & BÀN LUẬN
-                            </h2>
-                            <p class="text-xs text-color-deactive line-height-16">
-                                Vui lòng điền đầy đủ các thông tin bên dưới, Ban biên tập và tác giả sẽ hồi đáp sớm nhất
-                                qua thư điện tử.
+                    <div class="contact-hero-section__badge flex center-ver gap-10 item-padding-10 bg-light-blue border-radius-10">
+                        <div class="ratio-1x1 overflow-hidden contact-hero-section__badge-icon">
+                            <img src="./img/icon/clock.svg" alt="Clock" class="img-icon">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-sm text-color-brown uppercase bold">CAM KẾT DỊCH VỤ</span>
+                            <span class="text-color-primary bold">Phản hồi trong 30 phút</span>
+                            <span class="text-sm text-color-secondary">Trong giờ làm việc (8h00 - 17h30)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid Main Contact: Left Info Box & Right Form -->
+                <div class="contact-hero-section__grid flex flex-wrap gap-20">
+                    <!-- Left Column: Thông tin trụ sở ANRO -->
+                    <div class="col-section-2 contact-info-card bg-primary text-color-white border-radius-15 item-padding-30 flex flex-col gap-20">
+                        <div class="flex flex-col gap-10">
+                            <span class="text-sm uppercase text-color-third bold">TẬP ĐOÀN NÔNG NGHIỆP TINH HOA ANRO</span>
+                            <h2 class="contact-info-card__title text-color-white normalcase">ANRO Rice Corporation</h2>
+                            <p class="contact-info-card__subtitle text-color-white opacity-80">
+                                Dẫn đầu chuỗi giá trị thương mại lúa gạo - Cung ứng hạt ngọc đạt chuẩn quốc tế toàn cầu.
                             </p>
                         </div>
 
-                        <form class="flex flex-col gap-20">
-                            <div class="form-group flex flex-col gap-5">
-                                <label class="text-xs bold uppercase">HỌ VÀ TÊN QUÝ ĐỘC GIẢ <span
-                                        class="text-color-primary">*</span></label>
-                                <input type="text" required placeholder="Ví dụ: Nguyễn Văn Vĩnh"
-                                    class="form-input border-radius-5 item-padding-10">
+                        <!-- Trụ sở chính -->
+                        <div class="contact-info-card__item bg-white-secondary text-black border-radius-10 item-padding-15 flex flex-col gap-5">
+                            <div class="flex center-ver gap-10">
+                                <span class="badge-tag bg-primary text-color-white border-radius-5 item-padding-5">HO</span>
+                                <strong class="text-color-primary">ANRO Tower</strong>
                             </div>
-                            <div class="form-row flex gap-20 flex-wrap">
-                                <div class="form-group flex-1 flex flex-col gap-5">
-                                    <label class="text-xs bold uppercase">ĐỊA CHỈ EMAIL <span
-                                            class="text-color-primary">*</span></label>
-                                    <input type="email" required placeholder="name@example.com"
-                                        class="form-input border-radius-5 item-padding-10">
+                            <p class="text-color-secondary text-sm">Số 123, Đường Lên, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+                        </div>
+
+                        <!-- Nhà máy chế biến -->
+                        <div class="contact-info-card__item bg-white-secondary text-black border-radius-10 item-padding-15 flex flex-col gap-5">
+                            <div class="flex center-ver gap-10">
+                                <span class="badge-tag bg-primary text-color-white border-radius-5 item-padding-5">MF</span>
+                                <strong class="text-color-primary">Satake Milling Complex</strong>
+                            </div>
+                            <p class="text-color-secondary text-sm">Khu Công Nghiệp Thốt Nốt, Cần Thơ (Hơn 120.000m²)</p>
+                        </div>
+
+                        <!-- Hotline & Email list -->
+                        <div class="contact-info-card__contact-list flex flex-col gap-10 border-top-gray padding-top-15">
+                            <div class="flex jus-sb center-ver">
+                                <span class="text-color-white opacity-80">Tổng đài CSKH (Miễn phí):</span>
+                                <strong class="text-color-brown text-lg">1800 6868</strong>
+                            </div>
+                            <div class="flex jus-sb center-ver">
+                                <span class="text-color-white opacity-80">Đối tác xuất khẩu & B2B:</span>
+                                <strong class="text-color-white">(+84) 988 88 6868</strong>
+                            </div>
+                            <div class="flex jus-sb center-ver">
+                                <span class="text-color-white opacity-80">Email tiếp nhận hồ sơ:</span>
+                                <strong class="text-color-white">b2b@anrorice.com.vn</strong>
+                            </div>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="contact-info-card__social flex jus-sb center-ver border-top-gray padding-top-15">
+                            <span class="text-sm uppercase text-color-white opacity-80">KẾT NỐI TRUYỀN THÔNG</span>
+                            <div class="flex gap-10">
+                                <a href="#" class="social-icon ratio-1x1 border-radius-50 bg-white-secondary flex center-hor center-ver">
+                                    <img src="./img/icon/facebook.svg" alt="Facebook" class="img-icon">
+                                </a>
+                                <a href="#" class="social-icon ratio-1x1 border-radius-50 bg-white-secondary flex center-hor center-ver">
+                                    <img src="./img/icon/linkedin.svg" alt="LinkedIn" class="img-icon">
+                                </a>
+                                <a href="#" class="social-icon ratio-1x1 border-radius-50 bg-white-secondary flex center-hor center-ver">
+                                    <img src="./img/icon/youtube.svg" alt="YouTube" class="img-icon">
+                                </a>
+                                <a href="#" class="social-icon ratio-1x1 border-radius-50 bg-white-secondary flex center-hor center-ver">
+                                    <img src="./img/icon/zalo.svg" alt="Zalo" class="img-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Form Báo Giá / Yêu Cầu -->
+                    <div class="col-section-2 contact-form-card item-padding-30 border-radius-15 bg-light-blue">
+                        <form class="contact-form-card__form js-validate-form flex flex-col gap-15" novalidate>
+                            <div class="flex jus-sb center-ver">
+                                <h3 class="contact-form-card__title normalcase text-color-primary">Gửi Tin Nhắn / Yêu Cầu Báo Giá</h3>
+                                <span class="badge-tag bg-white text-color-brown border-radius-5 item-padding-5 text-sm uppercase bold">BẢO MẬT B2B 24/7</span>
+                            </div>
+                            <p class="contact-form-card__subtitle text-color-secondary text-sm">
+                                Chọn nhu cầu chuyên biệt để được chuyển trực tiếp tới chuyên viên tư vấn phù hợp.
+                            </p>
+
+                            <!-- Họ và tên & Số điện thoại -->
+                            <div class="form-row flex flex-wrap gap-15">
+                                <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                                    <label class="partner-form-card__label">Họ và tên quý khách *</label>
+                                    <input type="text" required placeholder="Ví dụ: Nguyễn Văn An"
+                                        data-msg="Vui lòng nhập họ và tên"
+                                        class="partner-form-card__input item-padding-10">
+                                    <span class="error-msg"></span>
                                 </div>
-                                <div class="form-group flex-1 flex flex-col gap-5">
-                                    <label class="text-xs bold uppercase">SỐ ĐIỆN THOẠI <span
-                                            class="text-color-deactive text-normal">(TÙY CHỌN)</span></label>
-                                    <input type="tel" placeholder="09xx xxx xxx" class="form-input border-radius-5 item-padding-10">
+
+                                <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                                    <label class="partner-form-card__label">Số điện thoại *</label>
+                                    <input type="tel" required pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+                                        placeholder="09xx xxx xxx" data-msg="Số điện thoại không hợp lệ"
+                                        class="partner-form-card__input item-padding-10">
+                                    <span class="error-msg"></span>
                                 </div>
                             </div>
 
-                            <!-- Chủ đề -->
-                            <div class="form-group flex flex-col gap-5">
-                                <label class="text-xs bold uppercase">CHỦ ĐỀ THƯ TỪ <span
-                                        class="text-color-primary">*</span></label>
-                               <div class="item-padding-10 bg-white border-radius-5">
-                                 <select required class="form-input  cursor-pointer">
-                                    <option value="" disabled selected>-- Chọn nội dung mong muốn trao đổi --</option>
-                                    <option value="1">Trao đổi về tác phẩm & Văn học</option>
-                                    <option value="2">Gửi bản thảo & Đóng góp ý kiến</option>
-                                    <option value="3">Liên hệ công việc / Phỏng vấn</option>
-                                </select>
-                               </div>
+                            <!-- Email & Nhu cầu -->
+                            <div class="form-row flex flex-wrap gap-15">
+                                <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                                    <label class="partner-form-card__label">Email công vụ / Cá nhân *</label>
+                                    <input type="email" required placeholder="name@company.com"
+                                        data-msg="Email không hợp lệ"
+                                        class="partner-form-card__input item-padding-10">
+                                    <span class="error-msg"></span>
+                                </div>
+
+                                <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                                    <label class="partner-form-card__label">Vấn đề cần tư vấn *</label>
+                                    <div class="partner-form-card__input item-padding-10 bg-white border-radius-5">
+                                        <select required class="border-none fill-view" data-msg="Vui lòng chọn nhu cầu">
+                                            <option value="" disabled selected>Vui lòng chọn nhu cầu tư vấn</option>
+                                            <option value="Đăng ký Đại lý / Nhà phân phối">Đăng ký Đại lý / Nhà phân phối</option>
+                                            <option value="Đặt mua sỉ số lượng lớn">Đặt mua sỉ số lượng lớn</option>
+                                            <option value="Hợp tác xuất khẩu B2B">Hợp tác xuất khẩu B2B</option>
+                                            <option value="Tư vấn khảo sát thực địa">Tư vấn khảo sát thực địa</option>
+                                        </select>
+                                    </div>
+                                    <span class="error-msg"></span>
+                                </div>
                             </div>
 
-                            <!-- Nội dung -->
-                            <div class="form-group flex flex-col gap-5">
-                                <label class="text-xs bold uppercase">NỘI DUNG TIN NHẮN / THƯ TỪ <span
-                                        class="text-color-primary">*</span></label>
-                                <textarea required rows="5"
-                                    placeholder="Kính gửi tác giả Dương Thanh Biểu và Ban biên tập, tôi muốn chia sẻ..."
-                                    class="form-input border-radius-5 item-padding-10"></textarea>
+                            <!-- Lời nhắn / Chi tiết yêu cầu -->
+                            <div class="partner-form-card__field form-group flex flex-col gap-5">
+                                <label class="partner-form-card__label">Lời nhắn / Chi tiết yêu cầu (Số lượng dự kiến, quy cách bao bì, thị trường mục tiêu...)</label>
+                                <textarea rows="4" placeholder="Nhập chi tiết yêu cầu của bạn tại đây..." class="partner-form-card__input item-padding-10 border-radius-5"></textarea>
                             </div>
 
-                            <!-- Checkbox xác nhận -->
-                            <label
-                                class="checkbox-container flex center-ver gap-10 cursor-pointer text-xs text-color-deactive">
-                                <input type="checkbox" required class="checkbox-input">
-                                <span>Tôi xác nhận các thông tin trên là chính xác và đồng ý để ban biên tập liên hệ lại
-                                    qua email hoặc điện thoại.</span>
-                            </label>
+                            <!-- Checkbox Khuyến mãi / Đăng ký nhận bản tin -->
+                            <div class="partner-form-card__field form-group flex gap-10 center-ver">
+                                <input type="checkbox" id="subscribe-news" class="checkbox-input" checked>
+                                <label for="subscribe-news" class="text-sm text-color-secondary">
+                                    Đăng ký nhận báo giá hạt lúa gạo thưởng hàng tháng (Gạo ST25 & Gạo Lết Đặc Sản) miễn phí qua email hoặc tin nhắn cho đối tác B2B. Mới nhất theo thời gian thực trước khi ký hợp đồng.
+                                </label>
+                            </div>
 
-                            <!-- Submit Button -->
-                            <div>
-                                <button type="submit"
-                                    class="btn-submit uppercase bold text-xs flex center-ver border-radius-5 item-padding-10 bg-primary cursor-pointer flex center-ver gap-10">
-                                    <span class="text-color-white">GỬI TIN NHẮN</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--white-color)">
-                                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-                                    </svg>
+                            <!-- Dynamic note & Button Submit -->
+                            <div class="flex jus-sb center-ver flex-wrap gap-15 border-top-gray padding-top-15">
+                                <p class="text-sm text-color-secondary flex-1">
+                                    * Thông tin của bạn được bảo mật tuyệt đối theo chính sách ANRO Privacy.
+                                </p>
+                                <button type="submit" class="bg-primary text-color-white item-padding-10-20 flex center-hor center-ver gap-10 border-radius-5">
+                                    <span>Gửi Yêu Cầu Cho ANRO</span>
+                                    <span class="btn-icon">&rarr;</span>
                                 </button>
                             </div>
                         </form>
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Network Warehouses Section -->
+        <section class="warehouse-section container-padding bg-light-blue">
+            <div class="container-l warehouse-section__container flex-col gap-30">
+                <div class="warehouse-section__header flex jus-sb center-ver flex-wrap gap-10">
+                    <div class="flex flex-col gap-10">
+                        <span class="text-color-brown uppercase text-sm bold">HỆ THỐNG KHO LOGISTICS TOÀN QUỐC</span>
+                        <h2 class="warehouse-section__title text-black normalcase">Mạng Lưới 6 Trung Tâm Kho Vận Quốc Gia</h2>
+                        <p class="text-color-secondary">Lưu trữ theo công nghệ kiểm soát nhiệt độ thông minh giúp bảo quản hạt gạo trọn vẹn và tươi mới, sẵn sàng điều phối giao hàng trong 24h.</p>
+                    </div>
+                    <span class="badge-tag bg-white text-color-primary border-radius-5 item-padding-10 text-sm bold">HỆ THỐNG ĐẠT CHUẨN ISO 22000 & HACCP CODEX</span>
                 </div>
 
+                <!-- Grid 6 Warehouses (3 columns x 2 rows) -->
+                <div class="warehouse-section__grid flex flex-wrap gap-20">
+                    <!-- Kho 1 -->
+                    <div class="col-3 warehouse-card bg-white item-padding-20 border-radius-10 flex flex-col gap-10 hover-border-primary">
+                        <span class="badge-tag bg-light-blue text-color-primary border-radius-5 item-padding-5 text-sm bold">KHO MIỀN BẮC</span>
+                        <h3 class="warehouse-card__title text-black">Kho Vận Hà Nội Central</h3>
+                        <p class="text-color-secondary text-sm">Lô CN-08, Cụm CN Ninh Hiệp, Gia Lâm, TP. Hà Nội</p>
+                        <span class="text-color-secondary text-sm">Quy mô: 8.500 m² • Công suất chứa: 45.000 tấn gạo</span>
+                        <div class="border-top-gray padding-top-10 flex jus-sb center-ver">
+                            <span class="text-sm text-color-secondary">Hotline Điều Phối:</span>
+                            <strong class="text-color-primary">024 3666 6111</strong>
+                        </div>
+                    </div>
+
+                    <!-- Kho 2 -->
+                    <div class="col-3 warehouse-card bg-white item-padding-20 border-radius-10 flex flex-col gap-10 hover-border-primary">
+                        <span class="badge-tag bg-light-blue text-color-primary border-radius-5 item-padding-5 text-sm bold">KHO BẮC TRUNG BỘ</span>
+                        <h3 class="warehouse-card__title text-black">Kho Phân Phối Thanh Hóa</h3>
+                        <p class="text-color-secondary text-sm">KCN Lễ Môn, Phường Quảng Hưng, TP. Thanh Hóa</p>
+                        <span class="text-color-secondary text-sm">Quy mô: 6.200 m² • Trung chuyển khu vực Bắc Trung Bộ</span>
+                        <div class="border-top-gray padding-top-10 flex jus-sb center-ver">
+                            <span class="text-sm text-color-secondary">Hotline Điều Phối:</span>
+                            <strong class="text-color-primary">0237 3888 6022</strong>
+                        </div>
+                    </div>
+
+                    <!-- Kho 3 -->
+                    <div class="col-3 warehouse-card bg-white item-padding-20 border-radius-10 flex flex-col gap-10 hover-border-primary">
+                        <span class="badge-tag bg-light-blue text-color-primary border-radius-5 item-padding-5 text-sm bold">KHO MIỀN TRUNG</span>
+                        <h3 class="warehouse-card__title text-black">Trung Tâm Kho Vận Đà Nẵng</h3>
+                        <p class="text-color-secondary text-sm">Đường số 3, KCN Hòa Cấm, Quận Cẩm Lệ, TP. Đà Nẵng</p>
+                        <span class="text-color-secondary text-sm">Quy mô: 7.000 m² • Cung ứng nhanh Miền Trung & Tây Nguyên</span>
+                        <div class="border-top-gray padding-top-10 flex jus-sb center-ver">
+                            <span class="text-sm text-color-secondary">Hotline Điều Phối:</span>
+                            <strong class="text-color-primary">0236 377 8888</strong>
+                        </div>
+                    </div>
+
+                    <!-- Kho 4 -->
+                    <div class="col-3 warehouse-card bg-white item-padding-20 border-radius-10 flex flex-col gap-10 hover-border-primary">
+                        <span class="badge-tag bg-light-blue text-color-primary border-radius-5 item-padding-5 text-sm bold">KHO ĐÔNG NAM BỘ</span>
+                        <h3 class="warehouse-card__title text-black">Kho Vận Thủ Đức Logistics</h3>
+                        <p class="text-color-secondary text-sm">Khu Chế Xuất Linh Trung 2, TP. Thủ Đức, TP. Hồ Chí Minh</p>
+                        <span class="text-color-secondary text-sm">Quy mô: 12.000 m² • Kho trung tâm điều phối TP.HCM</span>
+                        <div class="border-top-gray padding-top-10 flex jus-sb center-ver">
+                            <span class="text-sm text-color-secondary">Hotline Điều Phối:</span>
+                            <strong class="text-color-primary">028 9999 7788</strong>
+                        </div>
+                    </div>
+
+                    <!-- Kho 5 -->
+                    <div class="col-3 warehouse-card bg-white item-padding-20 border-radius-10 flex flex-col gap-10 hover-border-primary">
+                        <span class="badge-tag bg-light-blue text-color-primary border-radius-5 item-padding-5 text-sm bold">TỔNG KHO TP.HCM</span>
+                        <h3 class="warehouse-card__title text-black">Tổng Kho Tây Nam Bộ - Bình Chánh</h3>
+                        <p class="text-color-secondary text-sm">KCN Lê Minh Xuân, Xã Lê Minh Xuân, Huyện Bình Chánh, TP.HCM</p>
+                        <span class="text-color-secondary text-sm">Quy mô: 15.000 m² • Điểm tập kết hạt ngọc miền Tây</span>
+                        <div class="border-top-gray padding-top-10 flex jus-sb center-ver">
+                            <span class="text-sm text-color-secondary">Hotline Điều Phối:</span>
+                            <strong class="text-color-primary">028 3999 7799</strong>
+                        </div>
+                    </div>
+
+                    <!-- Kho 6 -->
+                    <div class="col-3 warehouse-card bg-white item-padding-20 border-radius-10 flex flex-col gap-10 hover-border-primary">
+                        <span class="badge-tag bg-light-blue text-color-primary border-radius-5 item-padding-5 text-sm bold">KHO ĐẦU MỐI MIỀN TÂY</span>
+                        <h3 class="warehouse-card__title text-black">Kho Đầu Mối Thốt Nốt - Cần Thơ</h3>
+                        <p class="text-color-secondary text-sm">Cảng Sông Thốt Nốt, Q. Thốt Nốt, TP. Cần Thơ</p>
+                        <span class="text-color-secondary text-sm">Quy mô: 25.000 m² • Công xuất sấy & bóc vỏ 1.200 tấn/ngày</span>
+                        <div class="border-top-gray padding-top-10 flex jus-sb center-ver">
+                            <span class="text-sm text-color-secondary">Hotline Điều Phối:</span>
+                            <strong class="text-color-primary">0292 322 8877</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Field Tour & Factory Registration Section -->
+        <section class="tour-registration-section container-padding bg-white">
+            <div class="container-l tour-registration-section__container flex-wrap gap-20 center-ver">
+                <!-- Banner bên trái -->
+                <div class="col-section-2 tour-banner pos-rel border-radius-15 overflow-hidden ratio-16x9">
+                    <img src="./img/content/about-main.jpg" alt="Cánh Đồng Sinh Thái ANRO" class="img-content">
+                    <div class="tour-banner__caption pos-abs item-padding-20 flex flex-col gap-10">
+                        <span class="badge-tag bg-secondary text-color-third border-radius-5 item-padding-5 text-sm uppercase bold">DÀNH CHO ĐỐI TÁC VÀ KHÁCH HÀNG B2B</span>
+                        <h2 class="text-color-white normalcase">Tham Quan Cánh Đồng Sinh Thái & Nhà Máy Satake</h2>
+                        <p class="text-color-white opacity-80 text-sm">
+                            Trải nghiệm thực tế công nghệ sấy lạnh tầng sôi, quy trình chế biến khép kín ISO & HACCP và không gian cánh đồng lúa ST25 thuần chủng.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Form đăng ký khảo sát bên phải -->
+                <div class="col-section-2 tour-form bg-light-blue item-padding-30 border-radius-15">
+                    <form class="tour-form__card js-validate-form flex flex-col gap-15" novalidate>
+                        <span class="text-sm uppercase text-color-brown bold">DÀNH CHO ĐẠI LÝ, DOANH NGHIỆP & ĐỐI TÁC B2B</span>
+                        <h3 class="tour-form__title text-color-primary normalcase">Đăng Ký Khảo Sát Thực Địa</h3>
+                        <p class="text-color-secondary text-sm">
+                            ANRO hỗ trợ toàn bộ chi phí đưa đón, ăn uống và lưu trú cho đại diện doanh nghiệp tham gia chương trình tham quan trải nghiệm thực tế.
+                        </p>
+
+                        <div class="form-row flex flex-wrap gap-15">
+                            <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                                <label class="partner-form-card__label">Tên đoàn / Công ty *</label>
+                                <input type="text" required placeholder="Tên đơn vị của bạn..."
+                                    data-msg="Vui lòng nhập tên công ty"
+                                    class="partner-form-card__input item-padding-10">
+                                <span class="error-msg"></span>
+                            </div>
+
+                            <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                                <label class="partner-form-card__label">Người đại diện liên hệ *</label>
+                                <input type="text" required placeholder="Họ và tên..."
+                                    data-msg="Vui lòng nhập họ và tên"
+                                    class="partner-form-card__input item-padding-10">
+                                <span class="error-msg"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row flex flex-wrap gap-15">
+                            <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                                <label class="partner-form-card__label">Số điện thoại *</label>
+                                <input type="tel" required pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+                                    placeholder="09xx xxx xxx" data-msg="Số điện thoại không hợp lệ"
+                                    class="partner-form-card__input item-padding-10">
+                                <span class="error-msg"></span>
+                            </div>
+
+                            <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                                <label class="partner-form-card__label">Số lượng thành viên dự kiến *</label>
+                                <input type="number" min="1" max="50" required placeholder="Ví dụ: 3 người"
+                                    data-msg="Vui lòng nhập số lượng"
+                                    class="partner-form-card__input item-padding-10">
+                                <span class="error-msg"></span>
+                            </div>
+                        </div>
+
+                        <div class="partner-form-card__field form-group flex flex-col gap-5">
+                            <label class="partner-form-card__label">Địa điểm đăng ký tham quan *</label>
+                            <div class="partner-form-card__input item-padding-10 bg-white border-radius-5">
+                                <select required class="border-none fill-view" data-msg="Vui lòng chọn địa điểm">
+                                    <option value="Nhà máy Chế biến Satake Thốt Nốt (Cần Thơ)" selected>Nhà máy Chế biến Satake Thốt Nốt (Cần Thơ)</option>
+                                    <option value="Cánh đồng Mẫu lớn Sóc Trăng (Giống ST25)">Cánh đồng Mẫu lớn Sóc Trăng (Giống ST25)</option>
+                                    <option value="Cánh đồng Lúa - Tôm Hữu cơ An Giang">Cánh đồng Lúa - Tôm Hữu cơ An Giang</option>
+                                </select>
+                            </div>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <button type="submit" class="bg-primary text-color-white item-padding-10-20 flex center-hor center-ver gap-10 border-radius-5 fill-view">
+                            <span>Xác Nhận Đăng Ký Lịch Khảo Sát Thực Địa</span>
+                            <span class="btn-icon">&rarr;</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map & Showroom Location Section -->
+        <section class="map-section container-padding bg-light-blue">
+            <div class="container-l map-section__container flex-col gap-20">
+                <div class="map-section__header flex jus-sb center-ver flex-wrap gap-10">
+                    <div>
+                        <span class="text-color-brown uppercase text-sm bold">BẢN ĐỒ VỊ TRÍ TRỤ SỞ</span>
+                        <h2 class="map-section__title text-black normalcase">Văn Phòng Điều Hành & Showroom Trải Nghiệm</h2>
+                    </div>
+                    <span class="text-sm text-color-secondary">Vị trí dễ dàng tìm kiếm trên Google Maps</span>
+                </div>
+
+                <!-- Frame bản đồ / Google Maps Wrapper -->
+                <div class="map-section__wrapper border-radius-15 overflow-hidden ratio-16x9 bg-white-secondary pos-rel">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.460232422501!2d106.7028123!3d10.7760114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f416f0d1111%3A0x2863925027a4128!2sHo%20Chi%20Minh%20City!5e0!3m2!1sen!2svn!4v1710000000000!5m2!1sen!2svn"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="bg-white-secondary" id="footer" data-include="./component/footer.html"></footer>
-    <div class="btntotop__container pos-fixed bg-white" data-include="./component/rolltotop.html" id="btnToTop">
+
+    <!-- Footer Components & Utilities -->
+    <footer class="bg-primary flex-col gap-30" data-include="./component/footer.html"></footer>
+
+    <div class="btntotop__container ratio-1x1 overflow-hidden pos-fixed bg-white"
+        data-include="./component/rolltotop.html" id="btnToTop">
     </div>
+
+    <div class="cta-floating flex flex-col z-index-5 jus-sb" data-include="./component/cta-floating.html"></div>
+
     <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script defer type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer type="text/javascript" src="./js/frontend.js"></script>
 </body>
