@@ -3,8 +3,11 @@
 /* ========================================== */
 .bg-primary { background-color: var(--primary-color); }
 .bg-secondary {background-color: var(--secondary-color);}
+.bg-third {background-color: var(--third-color);}
+.bg-four {background-color: var(--four-color);}
 .bg-white { background-color: var(--white-color); }
 .bg-white-secondary { background-color: var(--second-white-color); }
+.bg-light-green { background-color: var(--light-green);}
 .bg-light-blue { background-color: var(--light-blue-color); }
 .bg-black { background-color: var(--black-color); }
 .bg-red { background-color: var(--error-color); }
@@ -80,6 +83,7 @@
 .capitalize { text-transform: capitalize; }
 .lowercase { text-transform: lowercase; }
 .normalcase { text-transform: none !important; }
+.light { font-weight: 300;}
 .medium { font-weight: 500; }
 .bold { font-weight: bold; }
 .italic { font-style: italic; }

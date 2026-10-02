@@ -194,29 +194,29 @@
     height: 6px;
 }
 
-.commitment-card__icon-box{
+.commitment-card__icon-box {
     max-width: 56px;
 }
 
-.commitment-card__footer-icon{
+.commitment-card__footer-icon {
     max-width: 18px;
 }
 
-.commitment-card__badge{
+.commitment-card__badge {
     max-width: fit-content;
 }
 
-.process-card__icon{
+.process-card__icon {
     max-width: 16px;
 }
 
-.process-card__desc{
+.process-card__desc {
     min-height: 90px;
 }
 
 .expert-card__badge,
-.process-card__footer ,
-.process-card__desc{
+.process-card__footer,
+.process-card__desc {
     font-size: calc(var(--font-size-base) - 5px);
 }
 
@@ -229,15 +229,15 @@
     border-top: 1px solid var(--light-blue-color);
 }
 
-.process-section__header-left{
-    flex : 1 1 calc(60% - 10px);
+.process-section__header-left {
+    flex: 1 1 calc(60% - 10px);
 }
 
-.process-section__header-right{
+.process-section__header-right {
     flex: 0 0 calc(40% - 10px);
 }
 
-.expert-card__badge{
+.expert-card__badge {
     max-width: fit-content;
 }
 
@@ -245,11 +245,11 @@
     font-size: calc(var(--font-size-base) + 8px);
 }
 
-.expert-card__desc{
+.expert-card__desc {
     font-size: calc(var(--font-size-base) - 3px);
 }
 
-.certification-card__icon-box{
+.certification-card__icon-box {
     max-width: 24px;
 }
 
@@ -266,7 +266,7 @@
 .form-group textarea,
 .form-group select {
     width: 100%;
-    border: 1px solid #d1d5db; 
+    border: 1px solid #d1d5db;
     border-radius: 6px;
     outline: none;
     font-size: 14px;
@@ -279,7 +279,7 @@
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    border-color: #00563b; 
+    border-color: #00563b;
     box-shadow: 0 0 0 3px rgba(0, 86, 59, 0.15);
 }
 
@@ -293,8 +293,8 @@
 .form-group.error input,
 .form-group.error textarea,
 .form-group.error select {
-    border-color: #dc2626 !important; 
-    background-color: #fef2f2; 
+    border-color: #dc2626 !important;
+    background-color: #fef2f2;
 }
 
 .form-group.error .partner-form-card__input:focus,
@@ -305,7 +305,7 @@
 }
 
 .error-msg {
-    display: none; 
+    display: none;
     font-size: 12px;
     color: #dc2626;
     font-weight: 500;
@@ -323,6 +323,7 @@
         opacity: 0;
         transform: translateY(-4px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -335,42 +336,117 @@
     outline-offset: 1px;
 }
 
-.partner-cta-section__info{
+.partner-cta-section__info {
     flex: 1 1 calc(55% - 10px);
 }
 
-.partner-form-card{
+.partner-form-card {
     flex: 0 0 calc(45% - 10px);
 }
 
-.partner-form-card__label{
+.partner-form-card__label {
     font-size: calc(var(--font-size-base) - 4px);
 }
 
-.partner-form-card__title{
+.contact-hero-section__desc,
+.partner-form-card__title {
     font-size: calc(var(--font-size-base) + 2px);
 }
 
-.partner-form-card__subtitle{
+.partner-form-card__subtitle {
     font-size: calc(var(--font-size-base) - 3px);
 }
 
-.partner-cta-section__stat-num{
+.partner-cta-section__stat-num {
     font-size: calc(var(--font-size-base) + 35px);
 }
 
-.partner-cta-section__subtitle{
+.partner-cta-section__subtitle {
     max-width: fit-content;
     font-size: calc(var(--font-size-base) - 5px);
 }
 
-.partner-cta-section__title{
+.contact-hero-section__title,
+.partner-cta-section__title {
     font-size: calc(var(--font-size-base) + 24px);
 }
 
-.partner-cta-section__desc{
+.partner-cta-section__desc {
     font-size: calc(var(--font-size-base) + 2px);
 }
+
+/* css contact */
+.contact-hero-section__desc {
+    max-width: 900px;
+}
+
+.warehouse-card__icon,
+.contact-info-card__icon{
+    max-width: 14px;
+}
+
+.dot-status{
+    width: 12px;
+    height: 12px;
+}
+
+.contact-info-card__icon-item{
+    max-width: 36px;
+    max-height: 36px;
+}
+
+.social-icon{
+    max-width: 32px;
+}
+
+.partner-form-card__field .checkbox-input{
+    width: fit-content;
+}
+
+.form-group.check-form{
+    flex-direction: unset;
+}
+
+.tour-banner__caption {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.65) 100%); /* Màn đen phủ toàn hình */
+}
+
+.tour-banner .badge-tag {
+    background-color: #8c6227;
+}
+
+.tour-banner__title {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    max-width: 650px;
+}
+
+.tour-banner__card {
+    background: rgba(255, 255, 255, 0.12); 
+    backdrop-filter: blur(12px);            
+    -webkit-backdrop-filter: blur(12px);    
+    border: 1px solid rgba(255, 255, 255, 0.18); 
+    max-width: 580px;
+}
+
+.tour-card__icon {
+    width: 22px;
+    height: 22px;
+}
+
+.text-color-highlight {
+    color: #a3e635;
+}
+
+.map-section__wrapper{
+    aspect-ratio: 1420 / 320;
+}
+
 
 /* css CTA */
 .cta-floating {

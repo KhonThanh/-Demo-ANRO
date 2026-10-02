@@ -801,7 +801,7 @@ function disableGlobalCopy() {
  * COMPREHENSIVE DEV AUDIT TOOL (SEO & ACCESSIBILITY)
  * Bật/Tắt chế độ kiểm tra: Đổi ENABLE_DEV_AUDIT = false khi up lên Production.
  */
-const ENABLE_DEV_AUDIT = true;
+const ENABLE_DEV_AUDIT = false;
 
 if (ENABLE_DEV_AUDIT) {
   window.addEventListener("DOMContentLoaded", () => {
