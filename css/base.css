@@ -1,12 +1,13 @@
 :root {
   --white-color: #FFFFFF;
-  --second-white-color: #F9F9FF;      
-  --primary-color: #00502E;  
-  --secondary-color:  #006B3F;  
+  --second-white-color: #F9F9FF;
+  --primary-color: #00502E;
+  --secondary-color: #006B3F;
+  --third-color: #91E9B1;
   --brown-color: #C8A766;
   --light-blue-color: #F1F3FF;
-  --medum-blue-color: #E9EDFF;
-  --black-color: #141B2B;      
+  --medium-blue-color: #E9EDFF;
+  --black-color: #141B2B;
   --error-color: #CB241C;
   --header-h: 64px;
   --footer-h: 80px;
@@ -49,8 +50,8 @@ select {
   border: 1px solid var(--deactive-color);
 }
 
-select{
-  border:none;
+select {
+  border: none;
   width: 100%;
 }
 
@@ -75,7 +76,7 @@ body {
 header,
 footer,
 section {
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
 
@@ -114,71 +115,77 @@ p {
 }
 
 input,
-textarea{
-    caret-color: var(--black-color);
+textarea {
+  caret-color: var(--black-color);
 }
 
-li{
+li {
   color: var(--black-color);
 }
 
 section.hidden-section {
-    opacity: 1;
-    transform: none;
-    filter: none;
+  opacity: 1;
+  transform: none;
+  filter: none;
 }
 
 section.hidden-section>div>div {
-    opacity: 0;
-    filter: blur(6px);
-    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
-        transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
-        filter 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: opacity, transform, filter;
+  opacity: 0;
+  filter: blur(6px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
 }
 
 section.hidden-section>div>div:nth-child(1) {
-    transform: translateY(-40px) scale(0.95);
+  transform: translateY(-40px) scale(0.95);
 }
 
 section.hidden-section>div>div:nth-child(2) {
-    transform: translateY(60px);
-    transition-delay: 0.15s;
+  transform: translateY(60px);
+  transition-delay: 0.15s;
 }
 
 section.hidden-section>div>div:nth-child(n+3) {
-    transform: translateX(-50px);
-    transition-delay: 0.3s;
+  transform: translateX(-50px);
+  transition-delay: 0.3s;
 }
 
 section.hidden-section.show-up>div>div {
-    opacity: 1;
-    transform: translate(0) scale(1);
-    filter: blur(0);
+  opacity: 1;
+  transform: translate(0) scale(1);
+  filter: blur(0);
 }
 
 
 footer.hidden-section {
-    opacity: 0;
-    transform: translateY(100px) rotateX(-20deg);
-    transform-origin: top center;
-    filter: blur(20px);
-    transition: opacity 1.5s cubic-bezier(0.22, 1, 0.36, 1),
-        transform 1.5s cubic-bezier(0.22, 1, 0.36, 1),
-        filter 1.5s cubic-bezier(0.22, 1, 0.36, 1);
-    will-change: transform, opacity, filter;
+  opacity: 0;
+  transform: translateY(100px) rotateX(-20deg);
+  transform-origin: top center;
+  filter: blur(20px);
+  transition: opacity 1.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.5s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity, filter;
 }
 
 footer.hidden-section.show-up {
-    opacity: 1;
-    transform: translateY(0) rotateX(0);
-    filter: blur(0);
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+  filter: blur(0);
 }
 
 /* Chặn bôi đen toàn bộ website */
-*, *::before, *::after {
-  -webkit-user-select: none !important; /* Safari, Chrome */
-  -moz-user-select: none !important;    /* Firefox */
-  -ms-user-select: none !important;     /* IE/Edge */
-  user-select: none !important;         /* Chuẩn CSS3 */
+*,
+*::before,
+*::after {
+  -webkit-user-select: none !important;
+  /* Safari, Chrome */
+  -moz-user-select: none !important;
+  /* Firefox */
+  -ms-user-select: none !important;
+  /* IE/Edge */
+  user-select: none !important;
+  /* Chuẩn CSS3 */
 }

@@ -562,38 +562,42 @@ function validateField(input) {
   let message = "";
 
   const value = input.value.trim();
+  const isRequired = input.hasAttribute("required");
 
-  if (input.hasAttribute("required") && !value) {
-    message = input.dataset.msg || "Vui lòng không để trống";
+  // 1. Kiểm tra Rcheckbox / radio riêng
+  if (input.type === "checkbox" || input.type === "radio") {
+    if (isRequired && !input.checked) {
+      message = input.dataset.msg || "Vui lòng xác nhận";
+    }
+  }
+  // 2. Kiểm tra bắt buộc (required) cho các field thông thường & select
+  else if (isRequired && !value) {
+    message = input.dataset.msg || (input.tagName === "SELECT" ? "Vui lòng chọn một giá trị" : "Vui lòng không để trống");
   }
 
+  // 3. Kiểm tra định dạng Email
   if (!message && input.type === "email" && value) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(value)) message = "Email không hợp lệ";
   }
 
-  if (!message && input.hasAttribute("minlength")) {
+  // 4. Kiểm tra độ dài tối thiểu (minlength)
+  if (!message && input.hasAttribute("minlength") && value) {
     const min = +input.getAttribute("minlength");
     if (value.length < min) {
       message = input.dataset.msg || `Tối thiểu ${min} ký tự`;
     }
   }
 
-  if (!message && input.tagName === "SELECT" && input.required) {
-    if (!input.value) message = "Vui lòng chọn một giá trị";
-  }
-
-  if (!message && input.type === "checkbox" && input.required) {
-    if (!input.checked) message = "Vui lòng xác nhận";
-  }
-
-  if (!message && input.pattern && input.value) {
+  // 5. Kiểm tra biểu thức chính quy (pattern)
+  if (!message && input.pattern && value) {
     const regex = new RegExp(input.pattern);
-    if (!regex.test(input.value)) {
+    if (!regex.test(value)) {
       message = input.dataset.msg || "Giá trị không hợp lệ";
     }
   }
 
+  // Cập nhật giao diện lỗi
   if (group) group.classList.toggle("error", !!message);
   if (error) error.textContent = message;
 
@@ -602,9 +606,13 @@ function validateField(input) {
 
 function validateForm(form) {
   let isValid = true;
-  form.querySelectorAll("input, textarea").forEach(input => {
+  // Bổ sung select vào danh sách cần validate
+  const elements = form.querySelectorAll("input, textarea, select");
+
+  elements.forEach(input => {
     if (!validateField(input)) isValid = false;
   });
+
   return isValid;
 }
 
@@ -613,8 +621,13 @@ function initFormValidation(root = document) {
     if (form._validated) return;
     form._validated = true;
 
-    form.querySelectorAll("input, textarea").forEach(input => {
-      input.addEventListener("input", () => validateField(input));
+    // Bổ sung select vào danh sách lắng nghe sự kiện
+    const elements = form.querySelectorAll("input, textarea, select");
+
+    elements.forEach(input => {
+      // Dùng 'change' cho select/checkbox/radio, 'input' cho các ô nhập liệu bản văn
+      const eventType = (input.tagName === "SELECT" || input.type === "checkbox" || input.type === "radio") ? "change" : "input";
+      input.addEventListener(eventType, () => validateField(input));
     });
 
     form.addEventListener("submit", e => {

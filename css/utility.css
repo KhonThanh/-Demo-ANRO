@@ -5,13 +5,14 @@
 .bg-secondary {background-color: var(--secondary-color);}
 .bg-white { background-color: var(--white-color); }
 .bg-white-secondary { background-color: var(--second-white-color); }
-.bg-light-blue { background-color: var(--light-blue); }
+.bg-light-blue { background-color: var(--light-blue-color); }
 .bg-black { background-color: var(--black-color); }
 .bg-red { background-color: var(--error-color); }
 
 .text-color-white p, .text-color-white { color: var(--white-color); }
 .text-color-brown { color: var(--brown-color); }
 .text-color-primary { color: var(--primary-color); }
+.text-color-third { color:var(--third-color);}
 .text-color-white-secondary { color: var(--second-white-color )}
 .text-red { color: var(--error-color);}
 .text-black { color: var(--black-color, #000); }
@@ -79,6 +80,7 @@
 .capitalize { text-transform: capitalize; }
 .lowercase { text-transform: lowercase; }
 .normalcase { text-transform: none !important; }
+.medium { font-weight: 500; }
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
 .un-wrap { white-space: nowrap; }
@@ -133,12 +135,14 @@
 /* ========================================== */
 /* 7. VIỀN & HIỆU ỨNG (BORDERS & EFFECTS)     */
 /* ========================================== */
-.border-none {border: none; outline: none;}
+.border-none {border: none !important; outline: none !important;}
 .border-primary { border: 1px solid var(--primary-color);}
 .border-white { border: 1px solid var(--white-color);}
 .border-deactive { border: 1px solid var(--deactive-color);}
 .border-light-gray { border-color: rgba(0, 0, 0, 0.05); }
 
+.border-radius-50 { border-radius: 50px; }
+.border-radius-20 { border-radius: 20px; }
 .border-radius-15 { border-radius: 15px; }
 .border-radius-10 { border-radius: 10px; }
 .border-radius-5 { border-radius: 5px; }
