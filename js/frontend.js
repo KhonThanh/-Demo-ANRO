@@ -1128,7 +1128,34 @@ document.addEventListener("DOMContentLoaded", () => {
         innerSelector: ".m-menu__link"
       },
       {
-        trigger: ".pagination-btn",
+        trigger: ".filter-toggle__button",
+        target: ".product-filter",
+        closeBtn: ".col-sidebar-close__btn",
+        innerSelector: ".product-filter",
+        behavior: "toggle",
+        activeClass: "active",
+        closeOnOutside: true,
+        closeOnEsc: true,
+      },
+      {
+        trigger: ".product-card__btn",
+        target: ".contact-modal-overlay",
+        closeBtn: ".contact-modal-close",
+        innerSelector: ".contact-modal-card",
+        behavior: "toggle",
+        activeClass: "active",
+        closeOnOutside: true,
+        overlayCloses: true,
+        closeOnEsc: true
+      },
+      {
+        trigger: ".pagination .btn-page",
+        behavior: "activate",
+        activeClass: "active",
+      },
+
+      {
+        trigger: ".filter-tag",
         behavior: "activate",
         activeClass: "active",
       },

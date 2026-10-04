@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VĂN HÓA NGHỆ THUẬT NGHỆ HÀ | Tin tức</title>
+    <title>ANRO Rice - Tin Tức & Cẩm Nang Lúa Gạo</title>
     <link rel="icon" type="image/png" href="./img/logo/logo-favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- <link rel="stylesheet" href="../css/style.min.css"> -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/font.css">
@@ -19,106 +18,428 @@
 </head>
 
 <body>
-    <header class="flex center-ver bg-white" id="header" data-include="./component/header.html"></header>
+    <header class="header-section flex-col bg-white" data-include="./component/header.html"></header>
+
     <main>
-        <section class="flex bg-gray container-f bg-white-secondary">
+        <section class="flex bg-gray">
             <div class="container-l nav-bar__container">
-                <a href="javascript:void(0)" class="nav-bar__item">Trang chủ</a>
+                <a href="index.html" class="nav-bar__item">Trang chủ</a>
                 <a href="javascript:void(0)" class="nav-bar__item">Tin tức</a>
             </div>
         </section>
-        <section class="sec-hero bg-white">
-            <div class="container-l sec-hero__container container-padding flex flex-col gap-30">
-                <div class="sec-hero__header flex flex-col gap-15">
-                    <div class="sec-hero__badge flex flex-col gap-5">
-                        <span class="uppercase text-xs bold text-color-primary">• TUYỂN TẬP</span>
-                        <h1 class="sec-hero__main-title bold text-color-primary capitalize">Tuyển Tập Văn Thơ & Tác Phẩm
-                        </h1>
-                    </div>
-                    <div class="flex jus-sb gap-20 flex-wrap">
-                        <div class="sec-hero__filters flex gap-10 flex-wrap">
-                            <button type="button"
-                                class="btn-filter active border-radius-20 item-padding-8-20 text-xs bold">Tất
-                                cả</button>
-                            <button type="button"
-                                class="btn-filter cursor-pointer border-radius-20 item-padding-8-20 text-xs">Văn
-                                xuôi</button>
-                            <button type="button"
-                                class="btn-filter cursor-pointer border-radius-20 item-padding-8-20 text-xs">Thơ
-                                ca</button>
-                            <button type="button"
-                                class="btn-filter cursor-pointer border-radius-20 item-padding-8-20 text-xs">Tiểu luận &
-                                Phê bình</button>
-                            <button type="button"
-                                class="btn-filter cursor-pointer border-radius-20 item-padding-8-20 text-xs">Bút ký & Ký
-                                ức</button>
-                        </div>
-                        <div class="option-filter__container flex-1 item-padding-5-10 ">
-                            <select name="sortBy" id="sortBy">
-                                <option value="newest">Mới nhất</option>
-                                <option value="popular">Nổi bật nhất</option>
-                                <option value="oldest">Cũ nhất</option>
-                                <option value="alphabet">Tên A - Z</option>
-                            </select>
-                        </div>
-                    </div>
+
+        <section class="container-padding flex flex-col gap-20 bg-light-blue">
+            <div class="container-l jus-sb center-ver flex-wrap gap-30">
+                <div class="contact-hero-section__top flex flex-col gap-10">
+                    <span class="hero-section__tag text-sm uppercase text-color-brown bold">ANRO GASTRONOMY & AGRONOMY
+                        JOURNAL</span>
+                    <h1 class="contact-hero-section__title text-black normalcase medium">Cẩm Nang Hạt Ngọc & Tri Thức Ẩm
+                        Thực</h1>
+                    <p class="contact-hero-section__desc text-color-secondary">
+                        Kho tàng lưu trữ nghệ thuật giữ trọn vị ngọt nguyên bản từ đồng mẹ Mekong, phân tích chỉ số dinh
+                        dưỡng khoa học và câu chuyện gia truyền giữ bản sắc lúa nước Việt Nam của các nghệ nhân gạo
+                        thượng hạng.
+                    </p>
                 </div>
-                <div class="sec-news__card flex flex-wrap border-radius-15 overflow-hidden bg-white shadow-sm">
-                    <div class="sec-news__thumb pos-rel overflow-hidden">
-                        <img src="./img/content/hero-author.svg" alt="Dương Thanh Biểu"
-                            class="img-content fill-view fill-height ">
-                        <span
-                            class="sec-hero__overlay-badge pos-abs border-radius-5 text-xs bold bg-white text-color-primary item-padding-8-20">
-                            Trọng tâm số chuyên đề
-                        </span>
+            </div>
+
+            <div class="container-l flex gap-10 flex-wrap margin-top-10">
+                <button
+                    class="filter-tag center-ver active border-radius-20 item-padding-10-20 text-sm bold flex gap-10">
+                    Tất cả bài viết
+                </button>
+                <button class="filter-tag center-ver border-radius-20 item-padding-10-20 text-sm flex gap-10">
+                    Bí quyết nấu cơm ngon
+                </button>
+                <button class="filter-tag center-ver border-radius-20 item-padding-10-20 text-sm flex gap-10">
+                    Dinh dưỡng & Sức khỏe
+                </button>
+                <button class="filter-tag center-ver border-radius-20 item-padding-10-20 text-sm flex gap-10">
+                    Chuyên nông nghiệp lúa nước
+                </button>
+                <button class="filter-tag center-ver border-radius-20 item-padding-10-20 text-sm flex gap-10">
+                    Nghiên cứu giống ST25
+                </button>
+            </div>
+        </section>
+
+        <section class="container-padding bg-white">
+            <div class="container-l">
+                <div
+                    class="featured-news-card pos-rel flex flex-wrap bg-light-blue border-radius-15 overflow-hidden gap-20 item-padding-20 hover-border-primary pos-rel">
+                    <div class="featured-news-card__avatar col-section-2">
+                        <div class="featured-news-card__thumb ratio-16x9 border-radius-10 overflow-hidden pos-rel">
+                            <img src="./img/product/product-2.jpg" alt="Bí quyết cân đối tỷ lệ nước"
+                                class="featured-news-card__img img-content">
+                            <span
+                                class="card-tag text-xs uppercase bold bg-primary text-color-white border-radius-5">TIÊU
+                                ĐIỂM SỐ RA KỲ NÀY</span>
+                        </div>
                     </div>
-                    <div class="sec-hero__info flex-1 flex flex-col jus-sb gap-20 bg-white-secondary">
-                        <div class="sec-hero__info-top flex flex-col gap-15">
-                            <div class="sec-hero__meta flex flex-wrap gap-10 jus-sb align-center">
-                                <span
-                                    class="badge-tag uppercase text-xs bold border-radius-5 item-padding-8-20 text-color-white bg-primary">
-                                    TIÊU ĐIỂM NGHIÊN CỨU
-                                </span>
-                                <span class="sec-hero__date text-xs text-color-deactive flex align-center gap-5">
-                                    Ngày đăng: 15.03.2026
-                                </span>
+
+                    <div class="featured-news-card__content col-section-2 flex flex-col jus-sb item-padding-10 gap-15">
+                        <div class="flex flex-col gap-10">
+                            <div class="flex center-ver gap-10 text-xs text-color-brown uppercase bold">
+                                <span>KỸ THUẬT NẤU NƯỚNG</span>
+                                <span>•</span>
+                                <span>18 Tháng 02, 2026</span>
                             </div>
-                            <h3 class="sec-news__title normalcase bold text-color-primary clamp-text clamp-line-three">
-                                Tiếng vọng từ cội nguồn và dòng chảy ký ức trong tác phẩm Dương Thanh Biểu
-                            </h3>
-                            <p class="sec-hero__desc text-color-deactive text-sm clamp-text clamp-line-three">
-                                Những trang viết không chỉ là sự chiêm nghiệm về cuộc đời và con người, mà còn là hành
-                                trình đi tìm những giá trị cốt lõi của tình người, công lý và cái đẹp vĩnh cửu trong
-                                dòng chảy dập dồn của thời cuộc...
+                            <h2 class="featured-news-card__title text-header-size bold text-color-primary normalcase">
+                                Bí quyết cân đối tỷ lệ nước vàng cho cơm ST25 dẻo rào từng hạt
+                            </h2>
+                            <p class="featured-news-card__desc text-sm text-color-secondary line-height-1-6">
+                                Gạo ST25 chuẩn hữu cơ có đặc tính hút nước vừa phải, hàm lượng amylose đạt mức lý tưởng.
+                                Khác với gạo thường, việc canh chuẩn lượng nước chuẩn xác sẽ giúp bung tỏa hết vị ngọt
+                                nguyên bản, cho hạt cơm căng bóng, dẻo dai và không bị thiu.
                             </p>
                         </div>
-                        <div class="sec-hero__footer flex jus-sb align-center border-top item-padding-top-15">
-                            <span class="text-xs text-color-deactive">Người đăng</span>
-                            <a href="./news-detail.html" aria-label="Đọc toàn văn bài viết"
-                                class="sec-hero__link text-xs bold uppercase flex align-center gap-5 text-color-primary"
-                                aria-label="Đọc toàn văn bài viết">
-                                ĐỌC TOÀN VĂN &nbsp; ⟶
-                            </a>
-                        </div>
 
+                        <div class="featured-news-card__author flex jus-sb center-ver border-top-gray padding-top-15">
+                            <div class="flex center-ver gap-10">
+                                <div class="ratio-1x1 border-radius-50 overflow-hidden"
+                                    style="width: 40px; height: 40px;">
+                                    <img src="./img/logo/logo-favicon.png" alt="Tác giả" class="img-content">
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-sm bold text-black">Chuyên gia Dinh Dưỡng ANRO</span>
+                                    <span class="text-xs text-color-secondary">Cố vấn nghiên cứu lúa gạo Mekong</span>
+                                </div>
+                            </div>
+                            <div
+                                class="btn bg-primary text-color-white border-radius-5 item-padding-8-20 text-sm flex center-ver gap-5">
+                                Đọc bài viết &rarr;
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./news-detail.html" aria-label="Chi tiết bài viết" class="link-overlay"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-badges bg-white container-padding-bottom">
+            <div class="container-l flex flex-wrap gap-20">
+                <div class="trust-card col-3 flex center-ver gap-15 item-padding-20 bg-light-blue border-radius-10">
+                    <div class="trust-card__icon-box ratio-1x1 overflow-hidden">
+                        <img src="./img/icon/check-shield.svg" alt="100% Thuần Khiết" class="trust-card__icon img-icon">
+                    </div>
+                    <div class="trust-card__content flex flex-col">
+                        <strong class="trust-card__title text-sm text-color-primary">100% Thuần Khiết</strong>
+                        <span class="trust-card__desc text-xs text-color-secondary">Không pha trộn tạp chủng, không
+                            hương liệu</span>
+                    </div>
+                </div>
+
+                <div class="trust-card col-3 flex center-ver gap-15 item-padding-20 bg-light-blue border-radius-10">
+                    <div class="trust-card__icon-box ratio-1x1 overflow-hidden">
+                        <img src="./img/icon/shield.svg" alt="Kiểm Định Satake" class="trust-card__icon img-icon">
+                    </div>
+                    <div class="trust-card__content flex flex-col">
+                        <strong class="trust-card__title text-sm text-color-primary">Kiểm Định Satake</strong>
+                        <span class="trust-card__desc text-xs text-color-secondary">Tỷ lệ hạt gãy dưới 3% theo chuẩn
+                            Nhật Bản</span>
+                    </div>
+                </div>
+
+                <div class="trust-card col-3 flex center-ver gap-15 item-padding-20 bg-light-blue border-radius-10">
+                    <div class="trust-card__icon-box ratio-1x1 overflow-hidden">
+                        <img src="./img/icon/qr-code.svg" alt="Hữu Cơ Quốc Tế" class="trust-card__icon img-icon">
+                    </div>
+                    <div class="trust-card__content flex flex-col">
+                        <strong class="trust-card__title text-sm text-color-primary">Hữu Cơ Quốc Tế</strong>
+                        <span class="trust-card__desc text-xs text-color-secondary">Chứng nhận USDA & EU Organic tiêu
+                            chuẩn</span>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="latest-publications bg-white" data-include="./component/templatenews.html"></section>
-        <section class="latest-publications bg-white">
-            <div class="container-l archive-pagination flex center-hor gap-10 item-padding-20">
-                <button class="pagination-btn border-radius-5 prev">&lt;</button>
-                <button class="pagination-btn border-radius-5 active">1</button>
-                <button class="pagination-btn border-radius-5">2</button>
-                <button class="pagination-btn border-radius-5 next">&gt;</button>
+
+        <section class="container-padding bg-white">
+            <div class="container-l flex flex-col gap-20">
+                <div class="flex jus-sb center-ver border-bottom-gray padding-bottom-10">
+                    <h2 class="text-header-size bold text-black normalcase">Các Bài Viết Mới Nhất</h2>
+                    <span class="text-sm text-color-secondary">Hiển thị 8 bài viết mới cập nhật</span>
+                </div>
+
+                <div class="news-grid flex flex-wrap gap-20">
+                    <article
+                        class="news-card col-4 flex flex-col bg-white-secondary border-radius-10 pos-rel overflow-hidden hover-border-primary">
+                        <div class="news-card__thumb ratio-16x9 overflow-hidden pos-rel">
+                            <img src="./img/news/news-1.jpg" alt="Bài viết" class="news-card__img img-content">
+                            <span
+                                class="card-tag text-xs uppercase bold bg-primary text-color-white border-radius-5">Dinh
+                                dưỡng & Sức khỏe</span>
+                        </div>
+                        <div class="news-card__info flex flex-col gap-10 item-padding-10 flex-1 jus-sb">
+                            <div class="flex flex-col gap-5 margin-top-10">
+                                <span class="text-xs text-color-secondary">15/02/2026 • 5 phút đọc</span>
+                                <h3
+                                    class="news-card__title text-sm bold text-color-primary normalcase clamp-text clamp-line-two">
+                                    Công dụng vượt trội của Gạo Lứt Huyết Rồng đối với sức khỏe
+                                </h3>
+                                <p class="news-card__desc text-xs text-color-secondary clamp-text clamp-line-three">
+                                    Hàm lượng chất xơ cao gấp 3 lần gạo trắng giúp kiểm soát đường huyết và hỗ trợ tim
+                                    mạch hiệu quả.
+                                </p>
+                            </div>
+                            <p class="news-card__link text-xs bold text-color-brown underline margin-top-5">Đọc tiếp
+                                &rarr;</p>
+                        </div>
+                       <a href="./news-detail.html" aria-label="Chi tiết bài viết" class="link-overlay"></a>
+                    </article>
+
+                    <article
+                        class="news-card col-4 flex flex-col bg-white-secondary border-radius-10 pos-rel overflow-hidden hover-border-primary">
+                        <div class="news-card__thumb ratio-16x9 overflow-hidden pos-rel">
+                            <img src="./img/news/news-2.jpg" alt="Bài viết" class="news-card__img img-content">
+                            <span
+                                class="card-tag text-xs uppercase bold bg-primary text-color-white border-radius-5">Công
+                                nghệ xay xát</span>
+                        </div>
+                        <div class="news-card__info flex flex-col gap-10 item-padding-10 flex-1 jus-sb">
+                            <div class="flex flex-col gap-5 margin-top-10">
+                                <span class="text-xs text-color-secondary">12/02/2026 • 7 phút đọc</span>
+                                <h3
+                                    class="news-card__title text-sm bold text-color-primary normalcase clamp-text clamp-line-two">
+                                    Quy trình xay xát tươi trong ngày tại nhà máy Satake
+                                </h3>
+                                <p class="news-card__desc text-xs text-color-secondary clamp-text clamp-line-three">
+                                    Khám phá dây chuyền bóc vỏ trấu hiện đại từ Nhật Bản giữ trọn lớp cám dinh dưỡng tự
+                                    nhiên.
+                                </p>
+                            </div>
+                            <p class="news-card__link text-xs bold text-color-brown underline margin-top-5">Đọc tiếp
+                                &rarr;</p>
+                        </div>
+                       <a href="./news-detail.html" aria-label="Chi tiết bài viết" class="link-overlay"></a>
+                    </article>
+
+                    <article
+                        class="news-card col-4 flex flex-col bg-white-secondary border-radius-10 pos-rel overflow-hidden hover-border-primary">
+                        <div class="news-card__thumb ratio-16x9 overflow-hidden pos-rel">
+                            <img src="./img/news/news-3.jpg" alt="Bài viết" class="news-card__img img-content">
+                            <span
+                                class="card-tag text-xs uppercase bold bg-primary text-color-white border-radius-5">Chuyên
+                                nông nghiệp</span>
+                        </div>
+                        <div class="news-card__info flex flex-col gap-10 item-padding-10 flex-1 jus-sb">
+                            <div class="flex flex-col gap-5 margin-top-10">
+                                <span class="text-xs text-color-secondary">10/02/2026 • 4 phút đọc</span>
+                                <h3
+                                    class="news-card__title text-sm bold text-color-primary normalcase clamp-text clamp-line-two">
+                                    Nhật ký phù sa: Vụ mùa thu hoạch lúa ST25 sông Cửu Long
+                                </h3>
+                                <p class="news-card__desc text-xs text-color-secondary clamp-text clamp-line-three">
+                                    Những cánh đồng vàng rực canh tác chuẩn VietGAP gặt hái thành công trúng mùa được
+                                    giá.
+                                </p>
+                            </div>
+                            <p class="news-card__link text-xs bold text-color-brown underline margin-top-5">Đọc tiếp
+                                &rarr;</p>
+                        </div>
+                       <a href="./news-detail.html" aria-label="Chi tiết bài viết" class="link-overlay"></a>
+                    </article>
+
+                    <article
+                        class="news-card col-4 flex flex-col bg-white-secondary border-radius-10 pos-rel overflow-hidden hover-border-primary">
+                        <div class="news-card__thumb ratio-16x9 overflow-hidden pos-rel">
+                            <img src="./img/news/news-4.jpg" alt="Bài viết" class="news-card__img img-content">
+                            <span
+                                class="card-tag text-xs uppercase bold bg-primary text-color-white border-radius-5">Nghiên
+                                cứu giống</span>
+                        </div>
+                        <div class="news-card__info flex flex-col gap-10 item-padding-10 flex-1 jus-sb">
+                            <div class="flex flex-col gap-5 margin-top-10">
+                                <span class="text-xs text-color-secondary">08/02/2026 • 6 phút đọc</span>
+                                <h3
+                                    class="news-card__title text-sm bold text-color-primary normalcase clamp-text clamp-line-two">
+                                    Đặc tính sinh học và sự khác biệt của giống gạo ST25 chuẩn
+                                </h3>
+                                <p class="news-card__desc text-xs text-color-secondary clamp-text clamp-line-three">
+                                    Tìm hiểu cấu trúc hạt lúa thon dài, mùi thơm lá cẩm tự nhiên và độ dẻo mềm sau khi
+                                    nguội.
+                                </p>
+                            </div>
+                            <p class="news-card__link text-xs bold text-color-brown underline margin-top-5">Đọc tiếp
+                                &rarr;</p>
+                        </div>
+                       <a href="./news-detail.html" aria-label="Chi tiết bài viết" class="link-overlay"></a>
+                    </article>
+
+                    <article
+                        class="news-card col-4 flex flex-col bg-white-secondary border-radius-10 pos-rel overflow-hidden hover-border-primary">
+                        <div class="news-card__thumb ratio-16x9 overflow-hidden pos-rel">
+                            <img src="./img/news/news-5.jpg" alt="Bài viết" class="news-card__img img-content">
+                            <span
+                                class="card-tag text-xs uppercase bold bg-primary text-color-white border-radius-5">Bảo
+                                quản lúa gạo</span>
+                        </div>
+                        <div class="news-card__info flex flex-col gap-10 item-padding-10 flex-1 jus-sb">
+                            <div class="flex flex-col gap-5 margin-top-10">
+                                <span class="text-xs text-color-secondary">05/02/2026 • 3 phút đọc</span>
+                                <h3
+                                    class="news-card__title text-sm bold text-color-primary normalcase clamp-text clamp-line-two">
+                                    Mẹo bảo quản gạo không lo mối mọt trong môi trường nóng ẩm
+                                </h3>
+                                <p class="news-card__desc text-xs text-color-secondary clamp-text clamp-line-three">
+                                    Các phương pháp tự nhiên sử dụng tỏi, ớt khô hoặc bảo quản túi hút chân không gia
+                                    đình.
+                                </p>
+                            </div>
+                            <p class="news-card__link text-xs bold text-color-brown underline margin-top-5">Đọc tiếp
+                                &rarr;</p>
+                        </div>
+                       <a href="./news-detail.html" aria-label="Chi tiết bài viết" class="link-overlay"></a>
+                    </article>
+
+                    <article
+                        class="news-card col-4 flex flex-col bg-white-secondary border-radius-10 pos-rel overflow-hidden hover-border-primary">
+                        <div class="news-card__thumb ratio-16x9 overflow-hidden pos-rel">
+                            <img src="./img/news/news-6.jpg" alt="Bài viết" class="news-card__img img-content">
+                            <span class="card-tag text-xs uppercase bold bg-primary text-color-white border-radius-5">Bí
+                                quyết nấu ăn</span>
+                        </div>
+                        <div class="news-card__info flex flex-col gap-10 item-padding-10 flex-1 jus-sb">
+                            <div class="flex flex-col gap-5 margin-top-10">
+                                <span class="text-xs text-color-secondary">02/02/2026 • 4 phút đọc</span>
+                                <h3
+                                    class="news-card__title text-sm bold text-color-primary normalcase clamp-text clamp-line-two">
+                                    Nghệ thuật nấu xôi Nếp Cải Hoa Vàng dẻo thơm trọn vị
+                                </h3>
+                                <p class="news-card__desc text-xs text-color-secondary clamp-text clamp-line-three">
+                                    Hướng dẫn ngâm nếp đúng giờ và bí quyết đồ xôi 2 lần lửa cho món ăn truyền thống
+                                    chuẩn vị.
+                                </p>
+                            </div>
+                            <p class="news-card__link text-xs bold text-color-brown underline margin-top-5">Đọc tiếp
+                                &rarr;</p>
+                        </div>
+                       <a href="./news-detail.html" aria-label="Chi tiết bài viết" class="link-overlay"></a>
+                    </article>
+
+                    <article
+                        class="news-card col-4 flex flex-col bg-white-secondary border-radius-10 pos-rel overflow-hidden hover-border-primary">
+                        <div class="news-card__thumb ratio-16x9 overflow-hidden pos-rel">
+                            <img src="./img/news/news-7.jpg" alt="Bài viết" class="news-card__img img-content">
+                            <span
+                                class="card-tag text-xs uppercase bold bg-primary text-color-white border-radius-5">Bảo
+                                quản lúa gạo</span>
+                        </div>
+                        <div class="news-card__info flex flex-col gap-10 item-padding-10 flex-1 jus-sb">
+                            <div class="flex flex-col gap-5 margin-top-10">
+                                <span class="text-xs text-color-secondary">01/02/2026 • 3 phút đọc</span>
+                                <h3
+                                    class="news-card__title text-sm bold text-color-primary normalcase clamp-text clamp-line-two">
+                                    Vì sao nên chọn túi đóng gói khí Nitơ cho gạo sạch?
+                                </h3>
+                                <p class="news-card__desc text-xs text-color-secondary clamp-text clamp-line-three">
+                                    Giải pháp công nghệ giúp giữ trọn hương thơm tự nhiên và ngăn ngừa oxy hóa hạt gạo.
+                                </p>
+                            </div>
+                            <p class="news-card__link text-xs bold text-color-brown underline margin-top-5">Đọc tiếp
+                                &rarr;</p>
+                        </div>
+                       <a href="./news-detail.html" aria-label="Chi tiết bài viết" class="link-overlay"></a>
+                    </article>
+
+                    <article
+                        class="news-card col-4 flex flex-col bg-white-secondary border-radius-10 pos-rel overflow-hidden hover-border-primary">
+                        <div class="news-card__thumb ratio-16x9 overflow-hidden pos-rel">
+                            <img src="./img/news/news-8.jpg" alt="Bài viết" class="news-card__img img-content">
+                            <span class="card-tag text-xs uppercase bold bg-primary text-color-white border-radius-5">Bí
+                                quyết nấu ăn</span>
+                        </div>
+                        <div class="news-card__info flex flex-col gap-10 item-padding-10 flex-1 jus-sb">
+                            <div class="flex flex-col gap-5 margin-top-10">
+                                <span class="text-xs text-color-secondary">28/01/2026 • 5 phút đọc</span>
+                                <h3
+                                    class="news-card__title text-sm bold text-color-primary normalcase clamp-text clamp-line-two">
+                                    Cách nấu cháo gạo lứt đậu đỏ bổ dưỡng cho người lớn tuổi
+                                </h3>
+                                <p class="news-card__desc text-xs text-color-secondary clamp-text clamp-line-three">
+                                    Món ăn thanh lọc cơ thể, hỗ trợ tiêu hóa nhẹ nhàng thích hợp cho thực đơn hằng ngày.
+                                </p>
+                            </div>
+                            <p class="news-card__link text-xs bold text-color-brown underline margin-top-5">Đọc tiếp
+                                &rarr;</p>
+                        </div>
+                        <a href="./news-detail.html" aria-label="Chi tiết bài viết" class="link-overlay"></a>
+                    </article>
+                </div>
+
+                <div class="pagination flex center-hor center-ver gap-10 ">
+                    <button
+                        class="btn-page ratio-1x1 item-padding-10 border-radius-10 border-radius-5 flex center-hor center-ver">&#8249;</button>
+                    <button
+                        class="btn-page ratio-1x1 item-padding-10 border-radius-10 active border-radius-5 flex center-hor center-ver">1</button>
+                    <button
+                        class="btn-page ratio-1x1 item-padding-10 border-radius-10 border-radius-5 flex center-hor center-ver">2</button>
+                    <button
+                        class="btn-page ratio-1x1 item-padding-10 border-radius-10 border-radius-5 flex center-hor center-ver">&rsaquo;</button>
+                </div>
             </div>
         </section>
 
+        <section class="container-padding bg-white">
+            <div
+                class="container-l bg-light-blue border-radius-15 item-padding-30 flex flex-wrap center-ver jus-sb gap-20">
+                <!-- Cột bên trái: Tiêu đề & Giới thiệu -->
+                <div class="flex flex-col gap-15 col-section-2">
+                    <span class="text-xs uppercase bold text-color-primary flex center-ver gap-5">
+                        <i class="icon-mail"></i> BẢN TIN TINH HOA ẨM THỰC ANRO
+                    </span>
+                    <h2 class="medium text-black normalcase">
+                        Nhận công thức nấu gạo quý &amp; <br> Thông tin mùa gặt đầu tiên
+                    </h2>
+                    <p class="text-sm text-color-secondary">
+                        Mỗi tháng một lần, chúng tôi gửi tặng cẩm nang công thức món ngon từ các Master Chef và quyền ưu
+                        tiên thưởng thức các mẻ gạo mới gặt từ cánh đồng mẫu lớn.
+                    </p>
+                    <div class="flex flex-wrap gap-15 text-xs text-color-secondary margin-top-10">
+                        <span class="flex center-hor gap-5">
+                            <div class="ratio-1x1 icon-container"><img src="./img/icon/check-circle.svg"
+                                    alt="icon chất lượng thông tin quảng cáo"></div>
+                            Không spam quảng cáo
+                        </span>
+                        <span class="flex center-hor gap-5">
+                            <div class="ratio-1x1 icon-container"><img src="./img/icon/check-circle.svg"
+                                    alt="icon chất lượng thông tin quảng cáo"></div>
+                            Hủy đăng ký bất cứ lúc nào
+                        </span>
+                        <span class="flex center-hor gap-5">
+                            <div class="ratio-1x1 icon-container"><img src="./img/icon/check-circle.svg"
+                                    alt="icon chất lượng thông tin quảng cáo"></div>
+                            Tặng E-Book nấu cơm niêu
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Cột bên phải: Form đăng ký -->
+                <div class="col-section-2">
+                    <form class="bg-white border-radius-10 item-padding-20 flex flex-col gap-15 js-validate-form"
+                        novalidate>
+                        <div class="flex flex-col gap-5">
+                            <label class="text-xs bold text-black">Họ và tên của bạn</label>
+                            <input type="text" required placeholder="Ví dụ: Hoàng Hải Đăng"
+                                class="item-padding-10 border-radius-5 bg-light-blue width-full">
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <label class="text-xs bold text-black">Địa chỉ thư điện tử</label>
+                            <input type="email" required placeholder="tenban@email.com"
+                                class="item-padding-10 border-radius-5 bg-light-blue width-full">
+                        </div>
+                        <button type="submit"
+                            class="bg-primary text-color-white item-padding-10-20 border-radius-5 bold un-wrap flex center-hor gap-5 margin-top-5">
+                            Đăng Ký Nhận Bản Tin &gt;
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="bg-white-secondary" id="footer" data-include="./component/footer.html"></footer>
-    <div class="btntotop__container pos-fixed bg-white" data-include="./component/rolltotop.html" id="btnToTop">
-    </div>
+    <footer class="bg-primary flex-col gap-30" data-include="./component/footer.html"></footer>
+    <div class="btntotop__container ratio-1x1 overflow-hidden pos-fixed bg-white"
+        data-include="./component/rolltotop.html" id="btnToTop"></div>
+    <div class="cta-floating flex flex-col z-index-5 jus-sb" data-include="./component/cta-floating.html"></div>
     <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer type="text/javascript" src="./js/frontend.js"></script>

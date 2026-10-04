@@ -1,0 +1,81 @@
+<div
+    class="contact-modal-card bg-white border-radius-10 item-padding-30 pos-rel max-w-600 width-100 overflow-y-auto max-h-90vh">
+    <button type="button" aria-label="Đóng form"
+        class="contact-modal-close pos-abs top-15 right-15 border-none bg-transparent cursor-pointer text-xl bold text-color-secondary">&times;</button>
+
+    <form class="contact-form-card__form js-validate-form flex flex-col gap-15" novalidate>
+        <div class="flex jus-sb center-ver pr-30">
+            <h3 class="contact-form-card__title normalcase text-color-primary">Gửi Tin Nhắn / Yêu Cầu Báo Giá
+            </h3>
+            <span
+                class="badge-tag bg-white text-color-brown border-radius-5 item-padding-5 text-sm uppercase bold">BẢO
+                MẬT B2B 24/7</span>
+        </div>
+        <p class="contact-form-card__subtitle text-color-secondary text-sm">
+            Chọn nhu cầu chuyên biệt để được chuyển trực tiếp tới chuyên viên tư vấn phù hợp.
+        </p>
+
+        <div class="form-row flex flex-wrap gap-15">
+            <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                <label class="partner-form-card__label">Họ và tên quý khách *</label>
+                <input type="text" required placeholder="Ví dụ: Nguyễn Văn An" data-msg="Vui lòng nhập họ và tên"
+                    class="partner-form-card__input item-padding-10">
+                <span class="error-msg"></span>
+            </div>
+
+            <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                <label class="partner-form-card__label">Số điện thoại *</label>
+                <input type="tel" required pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b" placeholder="09xx xxx xxx"
+                    data-msg="Số điện thoại không hợp lệ" class="partner-form-card__input item-padding-10">
+                <span class="error-msg"></span>
+            </div>
+        </div>
+
+        <div class="form-row flex flex-wrap gap-15">
+            <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                <label class="partner-form-card__label">Email công vụ / Cá nhân *</label>
+                <input type="email" required placeholder="name@company.com" data-msg="Email không hợp lệ"
+                    class="partner-form-card__input item-padding-10">
+                <span class="error-msg"></span>
+            </div>
+
+            <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                <label class="partner-form-card__label">Vấn đề cần tư vấn *</label>
+                <div class="partner-form-card__input item-padding-10 border-radius-5">
+                    <select required class="border-none fill-view" data-msg="Vui lòng chọn nhu cầu">
+                        <option value="" disabled selected>Vui lòng chọn nhu cầu tư vấn</option>
+                        <option value="Đăng ký Đại lý / Nhà phân phối">Đăng ký Đại lý / Nhà phân phối</option>
+                        <option value="Đặt mua sỉ số lượng lớn">Đặt mua sỉ số lượng lớn</option>
+                        <option value="Hợp tác xuất khẩu B2B">Hợp tác xuất khẩu B2B</option>
+                        <option value="Tư vấn khảo sát thực địa">Tư vấn khảo sát thực địa</option>
+                    </select>
+                </div>
+                <span class="error-msg"></span>
+            </div>
+        </div>
+
+        <div class="partner-form-card__field form-group flex flex-col gap-5">
+            <label class="partner-form-card__label">Lời nhắn / Chi tiết yêu cầu (Số lượng dự kiến, quy cách bao
+                bì, thị trường mục tiêu...)</label>
+            <textarea rows="4" placeholder="Nhập chi tiết yêu cầu của bạn tại đây..."
+                class="partner-form-card__input item-padding-10 border-radius-5"></textarea>
+        </div>
+
+        <div
+            class="partner-form-card__field form-group item-padding-20 border-radius-10 overflow-hidden bg-light-blue check-form gap-10 center-ver">
+            <input type="checkbox" id="subscribe-news" class="checkbox-input" checked>
+            <label for="subscribe-news" class="text-sm text-color-secondary">
+                Đăng ký nhận báo giá hạt lúa gạo thưởng hàng tháng (Gạo ST25 & Gạo Lết Đặc Sản) miễn phí qua
+                email hoặc tin nhắn cho đối tác B2B. Mới nhất theo thời gian thực trước khi ký hợp đồng.
+            </label>
+        </div>
+
+        <div class="flex jus-sb center-ver flex-wrap gap-15 border-top-gray padding-top-15">
+            <button type="submit"
+                class="bg-primary text-color-white item-padding-10-20 flex center-hor center-ver gap-10 border-radius-5">
+                <span>Gửi Yêu Cầu Cho ANRO</span>
+                <span class="btn-icon">&rarr;</span>
+            </button>
+        </div>
+    </form>
+</div>

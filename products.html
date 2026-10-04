@@ -22,7 +22,6 @@
     <header class="header-section flex-col bg-white" data-include="./component/header.html"></header>
 
     <main>
-        <!-- Breadcrumb / Nav bar -->
         <section class="flex bg-gray">
             <div class="container-l nav-bar__container">
                 <a href="index.html" class="nav-bar__item">Trang chủ</a>
@@ -31,121 +30,143 @@
             </div>
         </section>
 
-        <!-- Category Hero Header Section -->
-        <section class="container-padding bg-light-blue">
-            <div class="container-l flex jus-sb center-ver flex-wrap gap-20">
-                <div class="flex flex-col gap-10 max-w-700">
-                    <span class="text-sm uppercase text-color-brown bold">BỘ BỘI TẬP VỤ MÙA 2026 • Thu Hoạch Sông Đồng Bằng Sông Cửu Long</span>
-                    <h1 class="category-hero__title text-color-primary">Tinh Tuyền Hạt Ngọc Trời</h1>
-                    <p class="category-hero__desc text-color-secondary">
-                        Mỗi hạt gạo ANRO được tuyển chọn trọn vẹn theo tỷ lệ đường tự nhiên, lưu giữ 100% hương thơm nguyên bản, 
-                        đạt tiêu chuẩn xuất khẩu sang thị trường Châu Âu & Hoa Kỳ.
+        <section class="container-padding flex flex-col gap-20 bg-light-blue">
+            <div class="container-l jus-sb center-ver flex-wrap gap-30">
+                <div class="contact-hero-section__top flex flex-col gap-10 ">
+                    <span class="hero-section__tag text-sm uppercase text-color-brown bold">BỘ BỘI TẬP VỤ MÙA 2026 • Thu
+                        Hoạch Sông Đồng
+                        Bằng Sông Cửu Long</span>
+                    <h1 class="contact-hero-section__title text-black normalcase medium">Tinh Tuyền Hạt Ngọc Trời</h1>
+                    <p class="contact-hero-section__desc text-color-secondary">
+                        Mỗi hạt gạo ANRO được tuyển chọn trọn vẹn theo tỷ lệ đường tự nhiên, lưu giữ 100% hương thơm
+                        nguyên bản, đạt tiêu chuẩn xuất khẩu sang thị trường Châu Âu & Hoa Kỳ.
                     </p>
                 </div>
-                
-                <!-- Badge Chứng Nhận -->
-                <div class="category-hero__badge bg-white item-padding-15 border-radius-10 flex center-ver gap-10 box-shadow-sm">
-                    <div class="ratio-1x1 category-hero__badge-icon flex center-hor center-ver">
-                        <img src="./img/icon/check-shield.svg" alt="Certified" class="img-icon">
+                <div
+                    class="contact-hero-section__badge flex center-ver gap-10 item-padding-10-20 bg-white border-radius-10">
+                    <div
+                        class="ratio-1x1 overflow-hidden  item-padding-10 border-radius-10 contact-hero-section__badge-icon">
+                        <img src="./img/icon/check-shield.svg" alt="Clock" class="img-icon">
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-sm bold text-color-primary">100% Thuần Giống ST25</span>
-                        <span class="text-sm text-color-secondary">Chứng nhận OCOP 5 SAO & Organic</span>
+                        <span class="text-color-primary bold">100% Thuần Chủng ST25</span>
+                        <span class="text-sm text-color-secondary un-wrap">Chứng nhận OCOP & USDA Organic</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Filter Tags Horizontal -->
-            <div class="container-l margin-top-20 flex gap-10 flex-wrap">
-                <button class="filter-tag active border-radius-20 item-padding-5-15 text-sm bold">Tất cả</button>
-                <button class="filter-tag bg-white border-radius-20 item-padding-5-15 text-sm">Gạo ST25 Đặc Sản ★</button>
-                <button class="filter-tag bg-white border-radius-20 item-padding-5-15 text-sm">Gạo Lứt Hữu Cơ Organic</button>
-                <button class="filter-tag bg-white border-radius-20 item-padding-5-15 text-sm">Gạo Lứt & Huyết Rồng ★</button>
-                <button class="filter-tag bg-white border-radius-20 item-padding-5-15 text-sm">Nếp Cải Hoa Vàng ★</button>
+            <div class="container-l flex gap-10 flex-wrap">
+                <button
+                    class="filter-tag center-ver active border-radius-20 item-padding-10-20 text-sm bold flex gap-10">
+                    Tất cả
+                    <div class="filter-tag__count text-sm item-padding-5 border-radius-5">10</div>
+                </button>
+                <button class="filter-tag center-ver border-radius-20 item-padding-10-20 text-sm flex gap-10">
+                    Gạo ST25 Đặc Sản
+                    <div class="filter-tag__count text-sm item-padding-5 border-radius-5">10</div>
+                </button>
+                <button class="filter-tag center-ver border-radius-20 item-padding-10-20 text-sm flex gap-10">
+                    Gạo Lứt Hữu Cơ Organic
+                    <div class="filter-tag__count text-sm item-padding-5 border-radius-5">10</div>
+                </button>
+                <button class="filter-tag center-ver border-radius-20 item-padding-10-20 text-sm flex gap-10">
+                    Gạo Lứt & Huyết Rồng
+                    <div class="filter-tag__count text-sm item-padding-5 border-radius-5">10</div>
+                </button>
+                <button class="filter-tag center-ver border-radius-20 item-padding-10-20 text-sm flex gap-10">
+                    Nếp Cải Hoa Vàng
+                    <div class="filter-tag__count text-sm item-padding-5 border-radius-5">10</div>
+                </button>
             </div>
         </section>
 
-        <!-- Main Product Section: Sidebar + Grid -->
         <section class="container-padding bg-white">
-            <div class="container-l flex gap-30 align-start">
-
-                <!-- Left Sidebar Filter -->
-                <aside class="col-sidebar product-filter flex flex-col gap-25">
+            <div class="container-l flex gap-20 pos-rel">
+                <aside class="col-sidebar product-filter flex flex-col gap-20">
+                    <div class="jus-end col-sidebar-close__container">
+                        <div
+                            class="col-sidebar-close__btn flex center-ver center-hor text-color-white item-padding-10 ratio-1x1 bg-primary border-radius-5">
+                            &times;</div>
+                    </div>
                     <div class="flex jus-sb center-ver border-bottom-gray padding-bottom-10">
-                        <span class="bold uppercase text-color-primary">Bộ Lọc Tối Ưu</span>
+                        <div class="product-filter__icon ratio-1x1 overflow-hidden">
+                            <img src="./img/icon/filter.svg" alt="icon phân loại">
+                        </div>
                         <a href="#" class="text-sm text-color-brown underline">Thiết lập lại</a>
                     </div>
 
-                    <!-- Category Accordion -->
                     <div class="filter-group flex flex-col gap-10">
-                        <span class="filter-group__title bold text-sm">CHỦNG LOẠI LÚA GẠO</span>
-                        <div class="flex flex-col gap-8">
+                        <span class="filter-group__title bold text-sm uppercase text-color-brown">CHỦNG LOẠI LÚA
+                            GẠO</span>
+                        <div class="flex flex-col gap-10">
                             <label class="checkbox-label flex center-ver gap-10 text-sm">
                                 <input type="checkbox" checked class="checkbox-input">
-                                <span>ST25 Thượng Hạng</span>
+                                <span class="flex-1">ST25 Thượng Hạng</span>
                                 <span class="text-color-secondary margin-left-auto">(5)</span>
                             </label>
                             <label class="checkbox-label flex center-ver gap-10 text-sm">
                                 <input type="checkbox" class="checkbox-input">
-                                <span>Hữu Cơ Cửu Long</span>
+                                <span class="flex-1">Hữu Cơ Cửu Long</span>
                                 <span class="text-color-secondary margin-left-auto">(3)</span>
                             </label>
                             <label class="checkbox-label flex center-ver gap-10 text-sm">
                                 <input type="checkbox" class="checkbox-input">
-                                <span>Lứt Tím Thảo Dược & Huyết Rồng</span>
+                                <span class="flex-1">Lứt Tím Thảo Dược & Huyết Rồng</span>
                                 <span class="text-color-secondary margin-left-auto">(4)</span>
                             </label>
                             <label class="checkbox-label flex center-ver gap-10 text-sm">
                                 <input type="checkbox" class="checkbox-input">
-                                <span>Nông Sản Thơm Chợ Đào</span>
+                                <span class="flex-1">Nông Sản Thơm Chợ Đào</span>
                                 <span class="text-color-secondary margin-left-auto">(2)</span>
                             </label>
                             <label class="checkbox-label flex center-ver gap-10 text-sm">
                                 <input type="checkbox" class="checkbox-input">
-                                <span>Nếp Tải Lứt & Cải Hoa Vàng</span>
+                                <span class="flex-1">Nếp Tải Lứt & Cải Hoa Vàng</span>
                                 <span class="text-color-secondary margin-left-auto">(4)</span>
                             </label>
                         </div>
                     </div>
 
-                    <!-- Quy Cách Đóng Gói -->
                     <div class="filter-group flex flex-col gap-10">
-                        <span class="filter-group__title bold text-sm">QUY CÁCH ĐÓNG GÓI</span>
-                        <div class="grid-2-col gap-8">
-                            <button class="btn-filter-option active text-sm item-padding-5 border-radius-5">Túi 5kg Hút chân không</button>
-                            <button class="btn-filter-option text-sm item-padding-5 border-radius-5">Túi 2kg Khí Nitơ</button>
-                            <button class="btn-filter-option text-sm item-padding-5 border-radius-5">Thùng 10kg Quà tặng</button>
-                            <button class="btn-filter-option text-sm item-padding-5 border-radius-5">Bao 25kg / 50kg B2B</button>
+                        <span class="filter-group__title bold text-sm uppercase text-color-brown">QUY CÁCH ĐÓNG
+                            GÓI</span>
+                        <div class="flex flex-wrap gap-20">
+                            <button class="btn-filter__option active text-sm item-padding-10 border-radius-5">Túi 5kg
+                                Hút
+                                chân không</button>
+                            <button class="btn-filter__option text-sm item-padding-10 border-radius-5">Túi 2kg Khí
+                                Nitơ</button>
+                            <button class="btn-filter__option text-sm item-padding-10 border-radius-5">Thùng 10kg Quà
+                                tặng</button>
+                            <button class="btn-filter__option text-sm item-padding-10 border-radius-5">Bao 25kg / 50kg
+                                B2B</button>
                         </div>
                     </div>
 
-                    <!-- Khoảng Giá Slider / Range -->
                     <div class="filter-group flex flex-col gap-10">
-                        <div class="flex jus-sb center-ver">
-                            <span class="filter-group__title bold text-sm">KHOẢNG GIÁ</span>
-                            <span class="text-sm bold text-color-primary">125.000đ - 1.250.000đ</span>
-                        </div>
-                        <input type="range" min="100000" max="1500000" class="price-range-slider">
-                        <div class="flex flex-col gap-5 text-sm text-color-secondary margin-top-5">
-                            <label class="radio-label flex center-ver gap-8">
+                        <span class="filter-group__title bold text-sm uppercase text-color-brown">phân loại theo
+                            giá</span>
+
+                        <div class="flex flex-col gap-10 text-sm text-color-secondary">
+                            <label class="radio-label flex center-ver gap-10">
                                 <input type="radio" name="price" checked>
                                 <span>Dưới 200.000đ / Túi</span>
                             </label>
-                            <label class="radio-label flex center-ver gap-8">
+                            <label class="radio-label flex center-ver gap-10">
                                 <input type="radio" name="price">
                                 <span>200.000đ - 500.000đ (Bán chạy)</span>
                             </label>
-                            <label class="radio-label flex center-ver gap-8">
+                            <label class="radio-label flex center-ver gap-10">
                                 <input type="radio" name="price">
                                 <span>Trên 500.000đ (Dòng Cao Cấp)</span>
                             </label>
                         </div>
                     </div>
 
-                    <!-- Chứng Nhận Chất Lượng -->
                     <div class="filter-group flex flex-col gap-10">
-                        <span class="filter-group__title bold text-sm">CHỨNG NHẬN CHẤT LƯỢNG</span>
-                        <div class="flex flex-col gap-8 text-sm">
+                        <span class="filter-group__title bold text-sm uppercase text-color-brown">CHỨNG NHẬN CHẤT
+                            LƯỢNG</span>
+                        <div class="flex flex-col gap-10 text-sm">
                             <label class="checkbox-label flex center-ver gap-10">
                                 <input type="checkbox" checked class="checkbox-input">
                                 <span>USDA Organic / Eurofin</span>
@@ -165,448 +186,365 @@
                         </div>
                     </div>
 
-                    <!-- Banner Cam Kết Sidebar -->
-                    <div class="filter-banner bg-light-blue border-radius-10 item-padding-15 flex flex-col gap-8">
-                        <div class="flex center-ver gap-8 text-color-primary bold text-sm">
+                    <div
+                        class="filter-banner item-padding-10 center-ver bg-light-blue border-radius-10 item-padding-15 flex flex gap-10">
+                        <div class="filter-banner__icon ratio-1x1 overflow-hidden">
                             <img src="./img/icon/shield.svg" alt="Shield" class="img-icon-sm">
-                            <span>Cam kết 100% không phối trộn</span>
                         </div>
-                        <p class="text-xs text-color-secondary">
-                            Đổi trả trong 7 ngày nếu không đúng hương vị nguyên bản. 100% xát mới hàng tuần.
-                        </p>
+                        <div class="filter-banner__info flex flex-col gap-10">
+                            <p class="text-xs text-color-secondary">
+                                Cam kết 100% không chất bảo quản, không hương liệu tổng hợp, không pha trộn tạp chủng.
+                            </p>
+                        </div>
                     </div>
                 </aside>
 
-                <!-- Right Content Grid -->
                 <div class="col-main flex-1 flex flex-col gap-20">
+                    <button type="button"
+                        class="filter-toggle__button ratio-1x1 overflow-hidden border-none bg-primary item-padding-10 border-radius-5 cursor-pointer"
+                        aria-label="filter">
+                        <img src="./img/icon/filter-white.svg" alt="Menu" class="icon-img-24 img-icon">
+                    </button>
+                    <div class="product-toolbar flex flex-wrap gap-20 jus-sb">
+                        <span class="text-sm text-color-secondary center-ver flex gap-10">Hiển thị <strong>9</strong>
+                            trên tổng số
+                            <strong>18</strong> sản phẩm • <i>Mùa thu hoạch mới tháng 09/2026</i></span>
 
-                    <!-- Toolbar Top -->
-                    <div class="product-toolbar flex jus-sb center-ver bg-light-blue item-padding-10-15 border-radius-8">
-                        <span class="text-sm text-color-secondary">Hiển thị <strong>9</strong> trên tổng số <strong>18</strong> sản phẩm • <i>Mùa thu hoạch mới tháng 09/2026</i></span>
-                        
                         <div class="flex center-ver gap-15">
-                            <div class="flex center-ver gap-8 text-sm">
-                                <span>Sắp xếp:</span>
-                                <select class="select-sort bg-white border-radius-5 item-padding-5-10">
-                                    <option value="popular">Bán chạy nhất (Best Seller)</option>
-                                    <option value="price-asc">Giá từ thấp đến cao</option>
-                                    <option value="price-desc">Giá từ cao đến thấp</option>
-                                    <option value="newest">Mới thu hoạch</option>
-                                </select>
-                            </div>
-                            <div class="view-mode flex gap-5">
-                                <button class="btn-view-mode active ratio-1x1 flex center-hor center-ver border-radius-5"><img src="./img/icon/grid-view.svg" alt="Grid" class="img-icon-sm"></button>
-                                <button class="btn-view-mode ratio-1x1 flex center-hor center-ver border-radius-5"><img src="./img/icon/list-view.svg" alt="List" class="img-icon-sm"></button>
+                            <div class="flex center-ver gap-10 text-sm">
+                                <span class="un-wrap">Sắp xếp:</span>
+                                <div class="bg-light-blue item-padding-10 border-radius-5">
+                                    <select class="select-sort bg-light-blue border-radius-5 item-padding-5-10">
+                                        <option value="popular">Bán chạy nhất (Best Seller)</option>
+                                        <option value="price-asc">Giá từ thấp đến cao</option>
+                                        <option value="price-desc">Giá từ cao đến thấp</option>
+                                        <option value="newest">Mới thu hoạch</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Grid 9 Sản Phẩm (3 cột x 3 hàng) -->
-                    <div class="product-grid grid-3-col gap-20">
+                    <div class="product-grid flex flex-wrap gap-20">
 
-                        <!-- Product Card 1 -->
-                        <div class="product-card bg-white border-radius-12 border-gray flex flex-col jus-sb overflow-hidden hover-shadow transition">
-                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1 bg-white-secondary">
-                                <span class="badge-tag pos-abs z-index-2 bg-brown text-color-white text-xs bold item-padding-5 border-radius-r-5 top-10 left-0">ĐẶC BIỆT THẾ GIỚI</span>
-                                <div class="btn-wishlist pos-abs z-index-2 top-10 right-10 border-radius-50 bg-white flex center-hor center-ver">
-                                    <img src="./img/icon/heart.svg" alt="Wishlist" class="img-icon-sm">
-                                </div>
-                                <img src="./img/product/st25-grand.jpg" alt="Gạo ST25 Hảo Hạng Grand Reserve" class="product-card__img img-content">
+                        <div
+                            class="raproduct-card col-3 overflow-hidden flex flex-col bg-white-secondary item-padding-15 border-radius-10 overflow-hidden pos-rel">
+                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1">
+                                <img src="./img/product/product-2.jpg" alt="Gạo Lứt"
+                                    class="product-card__img img-content">
+                                <a href="javascript:void(0);" aria-label="Liên hệ" class="pos-abs link-overlay"
+                                    aria-label="Chi tiết sản phẩm"></a>
                             </div>
-                            <div class="product-card__body item-padding-15 flex flex-col gap-10 flex-1 jus-sb">
-                                <div class="flex flex-col gap-5">
-                                    <div class="flex jus-sb center-ver text-xs text-color-secondary">
-                                        <span>Quy cách: Túi 5kg</span>
-                                        <span class="text-color-brown bold flex center-ver gap-2">★ 4.9 (128)</span>
-                                    </div>
-                                    <h3 class="product-card__title text-md bold text-black">Gạo ST25 Hảo Hạng Grand Reserve</h3>
-                                    <p class="product-card__desc text-xs text-color-secondary line-clamp-2">
-                                        Cơm mềm dẻo đặc biệt, hương thơm lá nếp tự nhiên. Hạt dài, thon, không bị bể ngắt khi nấu.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-10 margin-top-auto">
-                                    <div class="flex center-ver gap-8">
-                                        <strong class="product-card__price text-lg text-color-primary">285.000đ</strong>
-                                        <span class="text-xs text-color-secondary">/ Túi 5kg</span>
-                                        <span class="text-xs text-through opacity-60">310.000đ</span>
-                                    </div>
-                                    <div class="text-xs text-color-secondary flex center-ver gap-5">
-                                        <span>• Đặt hàng - Xát trong 24h</span>
-                                    </div>
-                                    <div class="social-icon pos-rel fill-view border-radius-5 bg-primary text-color-white flex center-hor center-ver item-padding-8">
-                                        <a href="#" class="link-overlay"></a>
-                                        <span class="bold text-sm">Thêm vào giỏ hàng</span>
-                                    </div>
+                            <div class="product-card__info flex flex-col gap-5 item-padding-20">
+                                <span class="product-card__name text-sm bold text-color-primary">Stare25 Huyết Rồng
+                                    Hữu Cơ</span>
+                                <p class="product-card__desc text-sm text-color-secondary">Giàu dinh dưỡng, tốt cho
+                                    sức khỏe tim mạch và người ăn kiêng.</p>
+                                <div class="product-card__footer flex jus-sb center-ver">
+                                    <span class="product-card__price bold text-md text-color-primary">195.000đ</span>
+                                    <a aria-label="Liên hệ" href="javascript:void(0);"
+                                        class="product-card__btn btn bg-primary text-color-white border-radius-5 item-padding-5-10 text-sm">Liên
+                                        hệ</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product Card 2 -->
-                        <div class="product-card bg-white border-radius-12 border-gray flex flex-col jus-sb overflow-hidden hover-shadow transition">
-                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1 bg-white-secondary">
-                                <span class="badge-tag pos-abs z-index-2 bg-primary text-color-white text-xs bold item-padding-5 border-radius-r-5 top-10 left-0">LÚA ORGANIC</span>
-                                <div class="btn-wishlist pos-abs z-index-2 top-10 right-10 border-radius-50 bg-white flex center-hor center-ver">
-                                    <img src="./img/icon/heart.svg" alt="Wishlist" class="img-icon-sm">
-                                </div>
-                                <img src="./img/product/st25-organic.jpg" alt="Gạo ST25 Hữu Cơ Sinh Thái Lúa Tôm" class="product-card__img img-content">
+                        <div
+                            class="raproduct-card col-3 overflow-hidden flex flex-col bg-white-secondary item-padding-15 border-radius-10 overflow-hidden pos-rel">
+                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1">
+                                <img src="./img/product/product-2.jpg" alt="Gạo Lứt"
+                                    class="product-card__img img-content">
+                                <a href="javascript:void(0);" aria-label="Liên hệ" class="pos-abs link-overlay"
+                                    aria-label="Chi tiết sản phẩm"></a>
                             </div>
-                            <div class="product-card__body item-padding-15 flex flex-col gap-10 flex-1 jus-sb">
-                                <div class="flex flex-col gap-5">
-                                    <div class="flex jus-sb center-ver text-xs text-color-secondary">
-                                        <span>Quy cách: Túi 2kg</span>
-                                        <span class="text-color-brown bold flex center-ver gap-2">★ 5.0 (82)</span>
-                                    </div>
-                                    <h3 class="product-card__title text-md bold text-black">Gạo ST25 Hữu Cơ Sinh Thái Lúa Tôm</h3>
-                                    <p class="product-card__desc text-xs text-color-secondary line-clamp-2">
-                                        Canh tác 1 vụ duy nhất trong năm trên đất lúa - tôm, giàu khoáng chất hữu cơ tự nhiên.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-10 margin-top-auto">
-                                    <div class="flex center-ver gap-8">
-                                        <strong class="product-card__price text-lg text-color-primary">170.000đ</strong>
-                                        <span class="text-xs text-color-secondary">/ Túi 2kg</span>
-                                        <span class="text-xs text-through opacity-60">185.000đ</span>
-                                    </div>
-                                    <div class="text-xs text-color-secondary flex center-ver gap-5">
-                                        <span>• Đạt chuẩn USDA Organic</span>
-                                    </div>
-                                    <div class="social-icon pos-rel fill-view border-radius-5 bg-primary text-color-white flex center-hor center-ver item-padding-8">
-                                        <a href="#" class="link-overlay"></a>
-                                        <span class="bold text-sm">Thêm vào giỏ hàng</span>
-                                    </div>
+                            <div class="product-card__info flex flex-col gap-5 item-padding-20">
+                                <span class="product-card__name text-sm bold text-color-primary">Stare25 Huyết Rồng
+                                    Hữu Cơ</span>
+                                <p class="product-card__desc text-sm text-color-secondary">Giàu dinh dưỡng, tốt cho
+                                    sức khỏe tim mạch và người ăn kiêng.</p>
+                                <div class="product-card__footer flex jus-sb center-ver">
+                                    <span class="product-card__price bold text-md text-color-primary">195.000đ</span>
+                                    <a aria-label="Liên hệ" href="javascript:void(0);"
+                                        class="product-card__btn btn bg-primary text-color-white border-radius-5 item-padding-5-10 text-sm">Liên
+                                        hệ</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product Card 3 -->
-                        <div class="product-card bg-white border-radius-12 border-gray flex flex-col jus-sb overflow-hidden hover-shadow transition">
-                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1 bg-white-secondary">
-                                <span class="badge-tag pos-abs z-index-2 bg-secondary text-color-third text-xs bold item-padding-5 border-radius-r-5 top-10 left-0">GIÀU DINH DƯỠNG</span>
-                                <div class="btn-wishlist pos-abs z-index-2 top-10 right-10 border-radius-50 bg-white flex center-hor center-ver">
-                                    <img src="./img/icon/heart.svg" alt="Wishlist" class="img-icon-sm">
-                                </div>
-                                <img src="./img/product/gut-tim.jpg" alt="Gạo Lứt Tím Thảo Dược Hoàng Gia" class="product-card__img img-content">
+                        <div
+                            class="raproduct-card col-3 overflow-hidden flex flex-col bg-white-secondary item-padding-15 border-radius-10 overflow-hidden pos-rel">
+                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1">
+                                <img src="./img/product/product-2.jpg" alt="Gạo Lứt"
+                                    class="product-card__img img-content">
+                                <a href="javascript:void(0);" aria-label="Liên hệ" class="pos-abs link-overlay"
+                                    aria-label="Chi tiết sản phẩm"></a>
                             </div>
-                            <div class="product-card__body item-padding-15 flex flex-col gap-10 flex-1 jus-sb">
-                                <div class="flex flex-col gap-5">
-                                    <div class="flex jus-sb center-ver text-xs text-color-secondary">
-                                        <span>Quy cách: Túi 1kg</span>
-                                        <span class="text-color-brown bold flex center-ver gap-2">★ 4.8 (95)</span>
-                                    </div>
-                                    <h3 class="product-card__title text-md bold text-black">Gạo Lứt Tím Thảo Dược Hoàng Gia</h3>
-                                    <p class="product-card__desc text-xs text-color-secondary line-clamp-2">
-                                        Hàm lượng Anthocyanin cao gấp 10 lần, hỗ trợ tim mạch, xát còn mầm mềm dẻo.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-10 margin-top-auto">
-                                    <div class="flex center-ver gap-8">
-                                        <strong class="product-card__price text-lg text-color-primary">135.000đ</strong>
-                                        <span class="text-xs text-color-secondary">/ Túi 1kg</span>
-                                        <span class="text-xs text-through opacity-60">150.000đ</span>
-                                    </div>
-                                    <div class="text-xs text-color-secondary flex center-ver gap-5">
-                                        <span>• Mềm cơm - Không cần ngâm lâu</span>
-                                    </div>
-                                    <div class="social-icon pos-rel fill-view border-radius-5 bg-primary text-color-white flex center-hor center-ver item-padding-8">
-                                        <a href="#" class="link-overlay"></a>
-                                        <span class="bold text-sm">Thêm vào giỏ hàng</span>
-                                    </div>
+                            <div class="product-card__info flex flex-col gap-5 item-padding-20">
+                                <span class="product-card__name text-sm bold text-color-primary">Stare25 Huyết Rồng
+                                    Hữu Cơ</span>
+                                <p class="product-card__desc text-sm text-color-secondary">Giàu dinh dưỡng, tốt cho
+                                    sức khỏe tim mạch và người ăn kiêng.</p>
+                                <div class="product-card__footer flex jus-sb center-ver">
+                                    <span class="product-card__price bold text-md text-color-primary">195.000đ</span>
+                                    <a aria-label="Liên hệ" href="javascript:void(0);"
+                                        class="product-card__btn btn bg-primary text-color-white border-radius-5 item-padding-5-10 text-sm">Liên
+                                        hệ</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product Card 4 -->
-                        <div class="product-card bg-white border-radius-12 border-gray flex flex-col jus-sb overflow-hidden hover-shadow transition">
-                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1 bg-white-secondary">
-                                <span class="badge-tag pos-abs z-index-2 bg-light-blue text-color-primary text-xs bold item-padding-5 border-radius-r-5 top-10 left-0">HƯƠNG CỔ TRUYỀN</span>
-                                <div class="btn-wishlist pos-abs z-index-2 top-10 right-10 border-radius-50 bg-white flex center-hor center-ver">
-                                    <img src="./img/icon/heart.svg" alt="Wishlist" class="img-icon-sm">
-                                </div>
-                                <img src="./img/product/jasmine.jpg" alt="Gạo Jasmine Hương Lúa Sông Cửu" class="product-card__img img-content">
+                        <div
+                            class="raproduct-card col-3 overflow-hidden flex flex-col bg-white-secondary item-padding-15 border-radius-10 overflow-hidden pos-rel">
+                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1">
+                                <img src="./img/product/product-2.jpg" alt="Gạo Lứt"
+                                    class="product-card__img img-content">
+                                <a href="javascript:void(0);" aria-label="Liên hệ" class="pos-abs link-overlay"
+                                    aria-label="Chi tiết sản phẩm"></a>
                             </div>
-                            <div class="product-card__body item-padding-15 flex flex-col gap-10 flex-1 jus-sb">
-                                <div class="flex flex-col gap-5">
-                                    <div class="flex jus-sb center-ver text-xs text-color-secondary">
-                                        <span>Quy cách: Túi 5kg</span>
-                                        <span class="text-color-brown bold flex center-ver gap-2">★ 4.8 (64)</span>
-                                    </div>
-                                    <h3 class="product-card__title text-md bold text-black">Gạo Jasmine Hương Lúa Sông Cửu</h3>
-                                    <p class="product-card__desc text-xs text-color-secondary line-clamp-2">
-                                        Hạt thon dài, dẻo vừa thoang thoảng hương hoa lài đặc trưng của vùng phù sa An Giang.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-10 margin-top-auto">
-                                    <div class="flex center-ver gap-8">
-                                        <strong class="product-card__price text-lg text-color-primary">195.000đ</strong>
-                                        <span class="text-xs text-color-secondary">/ Túi 5kg</span>
-                                        <span class="text-xs text-through opacity-60">210.000đ</span>
-                                    </div>
-                                    <div class="text-xs text-color-secondary flex center-ver gap-5">
-                                        <span>• Bán chạy nhất gia đình</span>
-                                    </div>
-                                    <div class="social-icon pos-rel fill-view border-radius-5 bg-primary text-color-white flex center-hor center-ver item-padding-8">
-                                        <a href="#" class="link-overlay"></a>
-                                        <span class="bold text-sm">Thêm vào giỏ hàng</span>
-                                    </div>
+                            <div class="product-card__info flex flex-col gap-5 item-padding-20">
+                                <span class="product-card__name text-sm bold text-color-primary">Stare25 Huyết Rồng
+                                    Hữu Cơ</span>
+                                <p class="product-card__desc text-sm text-color-secondary">Giàu dinh dưỡng, tốt cho
+                                    sức khỏe tim mạch và người ăn kiêng.</p>
+                                <div class="product-card__footer flex jus-sb center-ver">
+                                    <span class="product-card__price bold text-md text-color-primary">195.000đ</span>
+                                    <a aria-label="Liên hệ" href="javascript:void(0);"
+                                        class="product-card__btn btn bg-primary text-color-white border-radius-5 item-padding-5-10 text-sm">Liên
+                                        hệ</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product Card 5 -->
-                        <div class="product-card bg-white border-radius-12 border-gray flex flex-col jus-sb overflow-hidden hover-shadow transition">
-                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1 bg-white-secondary">
-                                <span class="badge-tag pos-abs z-index-2 bg-brown text-color-white text-xs bold item-padding-5 border-radius-r-5 top-10 left-0">CHUẨN VIETGAP</span>
-                                <div class="btn-wishlist pos-abs z-index-2 top-10 right-10 border-radius-50 bg-white flex center-hor center-ver">
-                                    <img src="./img/icon/heart.svg" alt="Wishlist" class="img-icon-sm">
-                                </div>
-                                <img src="./img/product/huyet-rong.jpg" alt="Gạo Lứt Huyết Rồng Thảo Dược" class="product-card__img img-content">
+                        <div
+                            class="raproduct-card col-3 overflow-hidden flex flex-col bg-white-secondary item-padding-15 border-radius-10 overflow-hidden pos-rel">
+                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1">
+                                <img src="./img/product/product-2.jpg" alt="Gạo Lứt"
+                                    class="product-card__img img-content">
+                                <a href="javascript:void(0);" aria-label="Liên hệ" class="pos-abs link-overlay"
+                                    aria-label="Chi tiết sản phẩm"></a>
                             </div>
-                            <div class="product-card__body item-padding-15 flex flex-col gap-10 flex-1 jus-sb">
-                                <div class="flex flex-col gap-5">
-                                    <div class="flex jus-sb center-ver text-xs text-color-secondary">
-                                        <span>Quy cách: Túi 2kg</span>
-                                        <span class="text-color-brown bold flex center-ver gap-2">★ 4.7 (51)</span>
-                                    </div>
-                                    <h3 class="product-card__title text-md bold text-black">Gạo Lứt Huyết Rồng Thảo Dược</h3>
-                                    <p class="product-card__desc text-xs text-color-secondary line-clamp-2">
-                                        Thu hoạch từ giống lúa đỏ ngập mặn Đồng Tháp Mười, tốn nhiều khoáng chất dinh dưỡng.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-10 margin-top-auto">
-                                    <div class="flex center-ver gap-8">
-                                        <strong class="product-card__price text-lg text-color-primary">125.000đ</strong>
-                                        <span class="text-xs text-color-secondary">/ Túi 2kg</span>
-                                        <span class="text-xs text-through opacity-60">140.000đ</span>
-                                    </div>
-                                    <div class="text-xs text-color-secondary flex center-ver gap-5">
-                                        <span>• Tốt cho người ăn kiêng</span>
-                                    </div>
-                                    <div class="social-icon pos-rel fill-view border-radius-5 bg-primary text-color-white flex center-hor center-ver item-padding-8">
-                                        <a href="#" class="link-overlay"></a>
-                                        <span class="bold text-sm">Thêm vào giỏ hàng</span>
-                                    </div>
+                            <div class="product-card__info flex flex-col gap-5 item-padding-20">
+                                <span class="product-card__name text-sm bold text-color-primary">Stare25 Huyết Rồng
+                                    Hữu Cơ</span>
+                                <p class="product-card__desc text-sm text-color-secondary">Giàu dinh dưỡng, tốt cho
+                                    sức khỏe tim mạch và người ăn kiêng.</p>
+                                <div class="product-card__footer flex jus-sb center-ver">
+                                    <span class="product-card__price bold text-md text-color-primary">195.000đ</span>
+                                    <a aria-label="Liên hệ" href="javascript:void(0);"
+                                        class="product-card__btn btn bg-primary text-color-white border-radius-5 item-padding-5-10 text-sm">Liên
+                                        hệ</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product Card 6 -->
-                        <div class="product-card bg-white border-radius-12 border-gray flex flex-col jus-sb overflow-hidden hover-shadow transition">
-                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1 bg-white-secondary">
-                                <span class="badge-tag pos-abs z-index-2 bg-secondary text-color-third text-xs bold item-padding-5 border-radius-r-5 top-10 left-0">ĐẶC SẢN LONG AN</span>
-                                <div class="btn-wishlist pos-abs z-index-2 top-10 right-10 border-radius-50 bg-white flex center-hor center-ver">
-                                    <img src="./img/icon/heart.svg" alt="Wishlist" class="img-icon-sm">
-                                </div>
-                                <img src="./img/product/cho-dao.jpg" alt="Gạo Nàng Thơm Chợ Đào Cổ Truyền" class="product-card__img img-content">
+                        <div
+                            class="raproduct-card col-3 overflow-hidden flex flex-col bg-white-secondary item-padding-15 border-radius-10 overflow-hidden pos-rel">
+                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1">
+                                <img src="./img/product/product-2.jpg" alt="Gạo Lứt"
+                                    class="product-card__img img-content">
+                                <a href="javascript:void(0);" aria-label="Liên hệ" class="pos-abs link-overlay"
+                                    aria-label="Chi tiết sản phẩm"></a>
                             </div>
-                            <div class="product-card__body item-padding-15 flex flex-col gap-10 flex-1 jus-sb">
-                                <div class="flex flex-col gap-5">
-                                    <div class="flex jus-sb center-ver text-xs text-color-secondary">
-                                        <span>Quy cách: Túi 5kg</span>
-                                        <span class="text-color-brown bold flex center-ver gap-2">★ 4.9 (112)</span>
-                                    </div>
-                                    <h3 class="product-card__title text-md bold text-black">Gạo Nàng Thơm Chợ Đào Cổ Truyền</h3>
-                                    <p class="product-card__desc text-xs text-color-secondary line-clamp-2">
-                                        Đặc sản trứ danh xứ Mỹ Lệ Cần Đước. Hạt dẻo vừa, hương thơm ngọt tự nhiên dai lâu.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-10 margin-top-auto">
-                                    <div class="flex center-ver gap-8">
-                                        <strong class="product-card__price text-lg text-color-primary">245.000đ</strong>
-                                        <span class="text-xs text-color-secondary">/ Túi 5kg</span>
-                                        <span class="text-xs text-through opacity-60">265.000đ</span>
-                                    </div>
-                                    <div class="text-xs text-color-secondary flex center-ver gap-5">
-                                        <span>• Bán chạy tháng này</span>
-                                    </div>
-                                    <div class="social-icon pos-rel fill-view border-radius-5 bg-primary text-color-white flex center-hor center-ver item-padding-8">
-                                        <a href="#" class="link-overlay"></a>
-                                        <span class="bold text-sm">Thêm vào giỏ hàng</span>
-                                    </div>
+                            <div class="product-card__info flex flex-col gap-5 item-padding-20">
+                                <span class="product-card__name text-sm bold text-color-primary">Stare25 Huyết Rồng
+                                    Hữu Cơ</span>
+                                <p class="product-card__desc text-sm text-color-secondary">Giàu dinh dưỡng, tốt cho
+                                    sức khỏe tim mạch và người ăn kiêng.</p>
+                                <div class="product-card__footer flex jus-sb center-ver">
+                                    <span class="product-card__price bold text-md text-color-primary">195.000đ</span>
+                                    <a aria-label="Liên hệ" href="javascript:void(0);"
+                                        class="product-card__btn btn bg-primary text-color-white border-radius-5 item-padding-5-10 text-sm">Liên
+                                        hệ</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product Card 7 -->
-                        <div class="product-card bg-white border-radius-12 border-gray flex flex-col jus-sb overflow-hidden hover-shadow transition">
-                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1 bg-white-secondary">
-                                <span class="badge-tag pos-abs z-index-2 bg-brown text-color-white text-xs bold item-padding-5 border-radius-r-5 top-10 left-0">PHIÊN BẢN HỘP QUÀ</span>
-                                <div class="btn-wishlist pos-abs z-index-2 top-10 right-10 border-radius-50 bg-white flex center-hor center-ver">
-                                    <img src="./img/icon/heart.svg" alt="Wishlist" class="img-icon-sm">
-                                </div>
-                                <img src="./img/product/bo-qua-st25.jpg" alt="Bộ Quà Tặng ST25 ANRO Imperial 10kg" class="product-card__img img-content">
+                        <div
+                            class="raproduct-card col-3 overflow-hidden flex flex-col bg-white-secondary item-padding-15 border-radius-10 overflow-hidden pos-rel">
+                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1">
+                                <img src="./img/product/product-2.jpg" alt="Gạo Lứt"
+                                    class="product-card__img img-content">
+                                <a href="javascript:void(0);" aria-label="Liên hệ" class="pos-abs link-overlay"
+                                    aria-label="Chi tiết sản phẩm"></a>
                             </div>
-                            <div class="product-card__body item-padding-15 flex flex-col gap-10 flex-1 jus-sb">
-                                <div class="flex flex-col gap-5">
-                                    <div class="flex jus-sb center-ver text-xs text-color-secondary">
-                                        <span>Quy cách: Thùng 10kg</span>
-                                        <span class="text-color-brown bold flex center-ver gap-2">★ 5.0 (38)</span>
-                                    </div>
-                                    <h3 class="product-card__title text-md bold text-black">Bộ Quà Tặng ST25 ANRO Imperial 10kg</h3>
-                                    <p class="product-card__desc text-xs text-color-secondary line-clamp-2">
-                                        Bao bì gỗ sơn mài cao cấp + 2 túi 5kg hạt chọn lọc. Món quà tri ân thượng hạng tặng đối tác.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-10 margin-top-auto">
-                                    <div class="flex center-ver gap-8">
-                                        <strong class="product-card__price text-lg text-color-primary">690.000đ</strong>
-                                        <span class="text-xs text-color-secondary">/ Thùng 10kg</span>
-                                        <span class="text-xs text-through opacity-60">750.000đ</span>
-                                    </div>
-                                    <div class="text-xs text-color-secondary flex center-ver gap-5">
-                                        <span>• Mẫu hộp quà tặng VIP</span>
-                                    </div>
-                                    <div class="social-icon pos-rel fill-view border-radius-5 bg-primary text-color-white flex center-hor center-ver item-padding-8">
-                                        <a href="#" class="link-overlay"></a>
-                                        <span class="bold text-sm">Thêm vào giỏ hàng</span>
-                                    </div>
+                            <div class="product-card__info flex flex-col gap-5 item-padding-20">
+                                <span class="product-card__name text-sm bold text-color-primary">Stare25 Huyết Rồng
+                                    Hữu Cơ</span>
+                                <p class="product-card__desc text-sm text-color-secondary">Giàu dinh dưỡng, tốt cho
+                                    sức khỏe tim mạch và người ăn kiêng.</p>
+                                <div class="product-card__footer flex jus-sb center-ver">
+                                    <span class="product-card__price bold text-md text-color-primary">195.000đ</span>
+                                    <a aria-label="Liên hệ" href="javascript:void(0);"
+                                        class="product-card__btn btn bg-primary text-color-white border-radius-5 item-padding-5-10 text-sm">Liên
+                                        hệ</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product Card 8 -->
-                        <div class="product-card bg-white border-radius-12 border-gray flex flex-col jus-sb overflow-hidden hover-shadow transition">
-                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1 bg-white-secondary">
-                                <span class="badge-tag pos-abs z-index-2 bg-light-blue text-color-primary text-xs bold item-padding-5 border-radius-r-5 top-10 left-0">ĐẶC SẢN MIỀN BẮC</span>
-                                <div class="btn-wishlist pos-abs z-index-2 top-10 right-10 border-radius-50 bg-white flex center-hor center-ver">
-                                    <img src="./img/icon/heart.svg" alt="Wishlist" class="img-icon-sm">
-                                </div>
-                                <img src="./img/product/nep-cai.jpg" alt="Nếp Cải Hoa Vàng Bắc Bộ Tuyển Lựa" class="product-card__img img-content">
+                        <div
+                            class="raproduct-card col-3 overflow-hidden flex flex-col bg-white-secondary item-padding-15 border-radius-10 overflow-hidden pos-rel">
+                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1">
+                                <img src="./img/product/product-2.jpg" alt="Gạo Lứt"
+                                    class="product-card__img img-content">
+                                <a href="javascript:void(0);" aria-label="Liên hệ" class="pos-abs link-overlay"
+                                    aria-label="Chi tiết sản phẩm"></a>
                             </div>
-                            <div class="product-card__body item-padding-15 flex flex-col gap-10 flex-1 jus-sb">
-                                <div class="flex flex-col gap-5">
-                                    <div class="flex jus-sb center-ver text-xs text-color-secondary">
-                                        <span>Quy cách: Túi 2kg</span>
-                                        <span class="text-color-brown bold flex center-ver gap-2">★ 4.8 (73)</span>
-                                    </div>
-                                    <h3 class="product-card__title text-md bold text-black">Nếp Cải Hoa Vàng Bắc Bộ Tuyển Lựa</h3>
-                                    <p class="product-card__desc text-xs text-color-secondary line-clamp-2">
-                                        Hạt tròn đầy, dẻo thơm nức mũi khi đồ xôi hay làm bánh. Rất phù hợp lễ tết cúng kiêu.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-10 margin-top-auto">
-                                    <div class="flex center-ver gap-8">
-                                        <strong class="product-card__price text-lg text-color-primary">110.000đ</strong>
-                                        <span class="text-xs text-color-secondary">/ Túi 2kg</span>
-                                        <span class="text-xs text-through opacity-60">125.000đ</span>
-                                    </div>
-                                    <div class="text-xs text-color-secondary flex center-ver gap-5">
-                                        <span>• Hàng xát mới mùa vụ</span>
-                                    </div>
-                                    <div class="social-icon pos-rel fill-view border-radius-5 bg-primary text-color-white flex center-hor center-ver item-padding-8">
-                                        <a href="#" class="link-overlay"></a>
-                                        <span class="bold text-sm">Thêm vào giỏ hàng</span>
-                                    </div>
+                            <div class="product-card__info flex flex-col gap-5 item-padding-20">
+                                <span class="product-card__name text-sm bold text-color-primary">Stare25 Huyết Rồng
+                                    Hữu Cơ</span>
+                                <p class="product-card__desc text-sm text-color-secondary">Giàu dinh dưỡng, tốt cho
+                                    sức khỏe tim mạch và người ăn kiêng.</p>
+                                <div class="product-card__footer flex jus-sb center-ver">
+                                    <span class="product-card__price bold text-md text-color-primary">195.000đ</span>
+                                    <a aria-label="Liên hệ" href="javascript:void(0);"
+                                        class="product-card__btn btn bg-primary text-color-white border-radius-5 item-padding-5-10 text-sm">Liên
+                                        hệ</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product Card 9 -->
-                        <div class="product-card bg-white border-radius-12 border-gray flex flex-col jus-sb overflow-hidden hover-shadow transition">
-                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1 bg-white-secondary">
-                                <span class="badge-tag pos-abs z-index-2 bg-primary text-color-white text-xs bold item-padding-5 border-radius-r-5 top-10 left-0">TIẾT KIỆM B2B</span>
-                                <div class="btn-wishlist pos-abs z-index-2 top-10 right-10 border-radius-50 bg-white flex center-hor center-ver">
-                                    <img src="./img/icon/heart.svg" alt="Wishlist" class="img-icon-sm">
-                                </div>
-                                <img src="./img/product/bao-25kg.jpg" alt="Bao Đại ST25 Tiêu Chuẩn 25kg" class="product-card__img img-content">
+                        <div
+                            class="raproduct-card col-3 overflow-hidden flex flex-col bg-white-secondary item-padding-15 border-radius-10 overflow-hidden pos-rel">
+                            <div class="product-card__thumb pos-rel overflow-hidden ratio-1x1">
+                                <img src="./img/product/product-2.jpg" alt="Gạo Lứt"
+                                    class="product-card__img img-content">
+                                <a href="javascript:void(0);" aria-label="Liên hệ" class="pos-abs link-overlay"
+                                    aria-label="Chi tiết sản phẩm"></a>
                             </div>
-                            <div class="product-card__body item-padding-15 flex flex-col gap-10 flex-1 jus-sb">
-                                <div class="flex flex-col gap-5">
-                                    <div class="flex jus-sb center-ver text-xs text-color-secondary">
-                                        <span>Quy cách: Bao 25kg</span>
-                                        <span class="text-color-brown bold flex center-ver gap-2">★ 4.9 (42)</span>
-                                    </div>
-                                    <h3 class="product-card__title text-md bold text-black">Bao Đại ST25 Tiêu Chuẩn 25kg</h3>
-                                    <p class="product-card__desc text-xs text-color-secondary line-clamp-2">
-                                        Đóng bao lớn tiết kiệm cho gia đình đông người hoặc nhà hàng, bếp ăn cao cấp. Tươi mới.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col gap-10 margin-top-auto">
-                                    <div class="flex center-ver gap-8">
-                                        <strong class="product-card__price text-lg text-color-primary">1.250.000đ</strong>
-                                        <span class="text-xs text-color-secondary">/ Bao 25kg</span>
-                                        <span class="text-xs text-through opacity-60">1.350.000đ</span>
-                                    </div>
-                                    <div class="text-xs text-color-secondary flex center-ver gap-5">
-                                        <span>• Miễn phí giao hàng nội thành</span>
-                                    </div>
-                                    <div class="social-icon pos-rel fill-view border-radius-5 bg-primary text-color-white flex center-hor center-ver item-padding-8">
-                                        <a href="#" class="link-overlay"></a>
-                                        <span class="bold text-sm">Thêm vào giỏ hàng</span>
-                                    </div>
+                            <div class="product-card__info flex flex-col gap-5 item-padding-20">
+                                <span class="product-card__name text-sm bold text-color-primary">Stare25 Huyết Rồng
+                                    Hữu Cơ</span>
+                                <p class="product-card__desc text-sm text-color-secondary">Giàu dinh dưỡng, tốt cho
+                                    sức khỏe tim mạch và người ăn kiêng.</p>
+                                <div class="product-card__footer flex jus-sb center-ver">
+                                    <span class="product-card__price bold text-md text-color-primary">195.000đ</span>
+                                    <a aria-label="Liên hệ" href="javascript:void(0);"
+                                        class="product-card__btn btn bg-primary text-color-white border-radius-5 item-padding-5-10 text-sm">Liên
+                                        hệ</a>
                                 </div>
                             </div>
                         </div>
 
                     </div>
 
-                    <!-- Pagination -->
-                    <div class="pagination flex center-hor center-ver gap-10 margin-top-20">
-                        <button class="btn-page active border-radius-5 flex center-hor center-ver">1</button>
-                        <button class="btn-page border-radius-5 flex center-hor center-ver">2</button>
-                        <button class="btn-page border-radius-5 flex center-hor center-ver">&rsaquo;</button>
+                    <div class="pagination flex center-hor center-ver gap-10 ">
+                        <button
+                            class="btn-page ratio-1x1 item-padding-10 border-radius-10 border-radius-5 flex center-hor center-ver">&#8249;</button>
+                        <button
+                            class="btn-page ratio-1x1 item-padding-10 border-radius-10 active border-radius-5 flex center-hor center-ver">1</button>
+                        <button
+                            class="btn-page ratio-1x1 item-padding-10 border-radius-10 border-radius-5 flex center-hor center-ver">2</button>
+                        <button
+                            class="btn-page ratio-1x1 item-padding-10 border-radius-10 border-radius-5 flex center-hor center-ver">&rsaquo;</button>
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- Guarantee Banner Section (Đoạn Banner Cam Kết 15 Ngày) -->
         <section class="guarantee-section container-padding bg-light-blue margin-top-30">
-            <div class="container-l guarantee-box bg-white border-radius-15 item-padding-30 flex jus-sb center-ver flex-wrap gap-20 box-shadow-sm pos-rel overflow-hidden">
-                <div class="flex flex-col gap-15 max-w-600 z-index-2">
-                    <span class="text-xs uppercase bold text-color-brown flex center-ver gap-5">
-                        <img src="./img/icon/shield-check.svg" alt="Check" class="img-icon-xs">
-                        ĐẢM BẢO CHẤT LƯỢNG ANRO FRESH MILL
-                    </span>
-                    <h2 class="guarantee-title text-color-primary normalcase">Gạo Tươi Xay Xát Mới Dưới 15 Ngày</h2>
-                    <p class="text-color-secondary text-sm">
-                        Chúng tôi không lưu kho lúa công nghiệp kéo dài. Mọi đơn hàng từ ANRO đều được xay xát trực tiếp từ lúa tươi thu hoạch trong vòng 15 ngày trước khi đến bếp của bạn.
+            <div
+                class="container-l guarantee-box bg-white border-radius-15 item-padding-30 flex flex-wrap center-ver gap-20 ">
+
+                <div class="guarantee-left flex flex-col gap-20">
+                    <div class="flex">
+                        <span
+                            class="badge-pill bg-light-blue  text-color-primary text-xs bold flex center-ver gap-5 item-padding-5-10 border-radius-20">
+                            <div class="guarantee-left__icon ratio-1x1 overflow-hidden">
+                                <img src="./img/icon/shield.svg" alt="Check" class="img-icon-xs">
+                            </div>
+                            ĐẶC QUYỀN CHẤT LƯỢNG ANRO FRESH MILL
+                        </span>
+                    </div>
+
+                    <h2 class="guarantee-title text-black normalcase text-2xl bold">Gạo Tươi Xay Xát Mới Dưới 15
+                        Ngày</h2>
+
+                    <p class="text-color-secondary text-sm line-height-1-6">
+                        Chúng tôi nói không với gạo lưu kho công nghiệp dài ngày. Mọi đơn hàng từ ANRO đều được xay xát
+                        trực tiếp từ lúa tươi nguyên vỏ trong vòng 15 ngày trước khi đến căn bếp của bạn.
                     </p>
-                    <div class="flex center-ver gap-20 flex-wrap text-sm bold text-color-primary">
-                        <div class="flex center-ver gap-8">
-                            <img src="./img/icon/rotate-ccw.svg" alt="Return" class="img-icon-sm">
-                            <span>Đổi trả 1-1</span>
+
+                    <div class="guarantee-features gap-20 flex flex-wrap">
+
+                        <div class="feature-item col-3 flex center-ver gap-10">
+                            <div class="feature-item__icon ratio-1x1 bg-light-blue border-radius-8 item-padding-10">
+                                <img src="./img/icon/rotate-ccw.svg" alt="Return" class="img-icon">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <strong class="text-sm text-black bold">Đổi trả 1–1</strong>
+                                <span class="text-xs text-color-secondary">Miễn phí nếu không dẻo thơm trọn vị</span>
+                            </div>
                         </div>
-                        <div class="flex center-ver gap-8">
-                            <img src="./img/icon/search-check.svg" alt="Origin" class="img-icon-sm">
-                            <span>Minh bạch gốc tích</span>
+
+                        <div class="feature-item col-3 flex center-ver gap-10">
+                            <div class="feature-item__icon ratio-1x1 bg-light-blue border-radius-8 item-padding-10">
+                                <img src="./img/icon/qr-code.svg" alt="Origin" class="img-icon">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <strong class="text-sm text-black bold">Minh bạch gốc tích</strong>
+                                <span class="text-xs text-color-secondary">Quét QR tra cứu nông hộ canh tác</span>
+                            </div>
                         </div>
-                        <div class="flex center-ver gap-8">
-                            <img src="./img/icon/truck-fast.svg" alt="Shipping" class="img-icon-sm">
-                            <span>Giao chuyển dụng</span>
+
+                        <div class="feature-item col-3 flex center-ver gap-10">
+                            <div class="feature-item__icon ratio-1x1 bg-light-blue border-radius-8 item-padding-10">
+                                <img src="./img/icon/truck-fast.svg" alt="Shipping" class="img-icon">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <strong class="text-sm text-black bold">Giao chuyên dụng</strong>
+                                <span class="text-xs text-color-secondary">Thùng chống ẩm giữ nguyên độ tươi</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Green Dashboard Widget / Card bên phải -->
-                <div class="guarantee-card bg-primary text-color-white border-radius-10 item-padding-20 flex flex-col gap-12 z-index-2 max-w-350 fill-view">
-                    <div class="flex jus-sb center-ver border-bottom-white-opacity padding-bottom-8">
-                        <span class="text-xs uppercase opacity-80">LỊCH SỬ TƯƠI MỚI</span>
-                        <span class="badge-tag bg-secondary text-color-third text-xs bold border-radius-5 item-padding-2-5">XÁT TẠI KHO</span>
+                <div
+                    class="guarantee-right border-radius-10 bg-primary text-color-white border-radius-12 item-padding-20 flex flex-col gap-15">
+
+                    <div class="flex jus-sb center-ver">
+                        <span class="text-xs uppercase bold tracking-wider opacity-90">CHỈ SỐ TƯƠI MỚI</span>
+                        <span class="badge-tag  text-color-white text-xs border-radius-12 item-padding-2-10">Hôm
+                            nay</span>
                     </div>
-                    <div class="flex jus-sb center-ver text-sm">
-                        <span class="opacity-80">Thời gian lúa về kho:</span>
-                        <strong>4.2 ngày trước</strong>
+
+                    <div class="flex flex-col gap-5">
+                        <div class="flex jus-sb center-ver text-sm">
+                            <span class="opacity-80">Thời gian lưu kho trung bình</span>
+                            <strong class="bold">4.2 ngày</strong>
+                        </div>
+                        <div class="progress-bar  border-radius-10 overflow-hidden">
+                            <div class="progress-bar__fill bg-gold" style="width: 45%;"></div>
+                        </div>
                     </div>
-                    <div class="flex jus-sb center-ver text-sm">
-                        <span class="opacity-80">Tỷ lệ hạt gãy vỡ:</span>
-                        <strong>< 3.0% (Chuẩn A+)</strong>
+
+                    <div class="flex flex-col gap-5">
+                        <div class="flex jus-sb center-ver text-sm">
+                            <span class="opacity-80">Tỷ lệ hạt gãy vỡ</span>
+                            <strong class="bold">&lt; 3.0% (Chuẩn A+)</strong>
+                        </div>
+                        <div class="progress-bar  border-radius-10 overflow-hidden">
+                            <div class="progress-bar__fill bg-gold" style="width: 25%;"></div>
+                        </div>
                     </div>
-                    <div class="flex jus-sb center-ver text-sm">
-                        <span class="opacity-80">Độ ẩm hạt tối ưu:</span>
-                        <strong>14.0% Đạt tiêu chuẩn</strong>
+
+                    <div class="flex flex-col gap-5">
+                        <div class="flex jus-sb center-ver text-sm">
+                            <span class="opacity-80">Độ ẩm hạt tự nhiên</span>
+                            <strong class="bold">14.0% tiêu chuẩn</strong>
+                        </div>
+                        <div class="progress-bar  border-radius-10 overflow-hidden">
+                            <div class="progress-bar__fill bg-gold" style="width: 85%;"></div>
+                        </div>
                     </div>
-                    <a href="#" class="btn-dashboard bg-white-secondary text-color-white text-xs bold center-text item-padding-8 border-radius-5 margin-top-5">
-                        &rArr; Xem Báo Cáo Thử Nghiệm Mới Nhất
+
+                    <a href="javascrpit:void()"
+                        class="btn-report bg-white text-color-primary text-sm  flex center-hor center-ver gap-10 item-padding-10 border-radius-6 margin-top-5 hover-bg-light transition">
+                        <div class="ratio-1x1 overflow-hidden btn-report__icon">
+                            <img src="./img/icon/document.svg" alt="Document" class="img-icon">
+                        </div>
+                        <span>Xem Báo Cáo Thử Nghiệm Vụ Mùa</span>
                     </a>
                 </div>
+
             </div>
         </section>
     </main>
-
-    <!-- Footer Components & Utilities -->
     <footer class="bg-primary flex-col gap-30" data-include="./component/footer.html"></footer>
-
+    <div class="contact-modal-overlay pos-fixed top-0 left-0 flex center-hor center-ver z-index-modal"
+        data-include="./component/popup.html"></div>
     <div class="btntotop__container ratio-1x1 overflow-hidden pos-fixed bg-white"
         data-include="./component/rolltotop.html" id="btnToTop">
     </div>
