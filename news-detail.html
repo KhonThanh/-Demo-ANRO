@@ -29,83 +29,87 @@
                     Rice</a>
             </div>
         </section>
-        <section class="container-padding bg-white">
-            <div class="container-l flex flex-col gap-20">
-
-                <div class="flex center-ver gap-10 flex-wrap">
-                    <span class="bg-primary text-color-white text-xs bold uppercase item-padding-5-10 border-radius-5">
+        
+        <section class="news-detail-header container-padding bg-white">
+            <div class="news-detail-header__container container-l flex flex-col gap-20">
+                <div class="news-detail-header__tags flex center-ver gap-10 flex-wrap">
+                    <span
+                        class="news-detail-header__tag-badge bg-primary text-color-white text-xs bold uppercase item-padding-5-10 border-radius-5">
                         CHUYÊN ĐỀ NGHỆ NHÂN
                     </span>
-                    <div class="flex center-ver gap-5 text-xs bold text-color-brown uppercase">
-                        <div class="ratio-1x1 flex center-hor center-ver" style="width: 16px; height: 16px;">
+                    <div
+                        class="news-detail-header__tag-journal flex center-ver gap-5 text-xs bold text-color-brown uppercase">
+                        <div class="ratio-1x1 flex center-hor center-ver">
                             <img src="./img/icon/ribbon.svg" alt="Tạp chí di sản" class="img-icon">
                         </div>
-                        <span>TẠP CHÍ DI SẢN LÚA GẠO</span>
+                        <span class="un-wrap">TẠP CHÍ DI SẢN LÚA GẠO</span>
                     </div>
                 </div>
 
-                <div class="flex jus-sb align-end gap-30 flex-wrap">
-                    <h1 class="text-black normalcase bold flex-1" style="font-size: 38px; line-height: 1.25;">
+                <div class="news-detail-header__main z-index-5 flex jus-sb align-end gap-30 flex-wrap">
+                    <h1 class="news-detail-header__title text-black normalcase bold flex-1">
                         Bí Quyết Cân Đối Tỷ Lệ Nước Vàng <br>Cho Gạo ST25 Dẻo Ráo Từng Hạt
                     </h1>
 
-                    <div class="flex flex-col align-end gap-5">
-                        <div class="flex center-ver gap-10">
-                            <button class="bg-light-blue border-radius-10 flex center-hor center-ver cursor-pointer"
-                                style="width: 40px; height: 40px;" aria-label="Lưu bài viết">
-                                <img src="./img/icon/bookmark.svg" alt="Bookmark" style="width: 18px; height: 18px;"
-                                    class="img-icon">
+                    <div class="news-detail-header__actions  flex flex-col align-end gap-5">
+                        <div class="news-detail-header__action-btns pos-rel flex center-ver gap-10">
+                            <button
+                                class=" ratio-1x1 overflow-hidden news-detail-header__action-btn item-padding-10 border-radius-5 news-detail-header__action-btn bg-light-blue border-radius-10 flex center-hor center-ver cursor-pointer"
+                                aria-label="Chia sẻ">
+                                <img src="./img/icon/share.svg" alt="Share" class="img-icon">
                             </button>
-                            <button class="bg-light-blue border-radius-10 flex center-hor center-ver cursor-pointer"
-                                style="width: 40px; height: 40px;" aria-label="Chia sẻ">
-                                <img src="./img/icon/share.svg" alt="Share" style="width: 18px; height: 18px;"
-                                    class="img-icon">
-                            </button>
-                            <button class="bg-light-blue border-radius-10 flex center-hor center-ver cursor-pointer"
-                                style="width: 40px; height: 40px;" aria-label="In bài viết">
-                                <img src="./img/icon/printer.svg" alt="Print" style="width: 18px; height: 18px;"
-                                    class="img-icon">
-                            </button>
+                            <div class="news-detail-header__action-container pos-abs item-padding-10 center-ver gap-10 bg-white border-radius-5">
+                                <div class="ratio-1x1 icon-24 cursor-pointer">
+                                    <img src="./img/icon/facebook.svg" alt="facebook" class="img-icon">
+                                </div>
+                                <div class="ratio-1x1 icon-24 cursor-pointer">
+                                    <img src="./img/icon/copy-link.svg" alt="copy link" class="img-icon">
+                                </div>
+                            </div>
                         </div>
-                        <span class="text-xs text-color-secondary bold uppercase margin-top-5"
-                            style="letter-spacing: 0.5px;">
+                        <span class="news-detail-header__issn text-xs text-color-secondary bold uppercase margin-top-5">
                             ISSN: 2948-1829
                         </span>
                     </div>
                 </div>
 
                 <div
-                    class="bg-light-blue border-radius-15 item-padding-15-20 flex jus-sb center-ver flex-wrap gap-20 margin-top-10">
-                    <div class="flex center-ver gap-15">
-                        <div class="ratio-1x1 border-radius-10 overflow-hidden" style="width: 48px; height: 48px;">
+                    class="news-detail-header__meta-bar item-padding-10 bg-light-blue border-radius-15 item-padding-15-20 flex jus-sb center-ver flex-wrap gap-20">
+                    <div class="news-detail-header__author flex center-ver gap-15">
+                        <div class="news-detail-header__author-avatar ratio-1x1 border-radius-10 overflow-hidden">
                             <img src="./img/author/author-nguyen-thanh-long.jpg" alt="GS.TS Nguyễn Thành Long"
                                 class="img-content">
                         </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex center-ver gap-5">
+                        <div class="news-detail-header__author-info flex flex-col gap-2">
+                            <div class="news-detail-header__author-name flex center-ver gap-5">
                                 <span class="text-sm bold text-black">GS.TS Nguyễn Thành Long</span>
-                                <img src="./img/icon/verified-check.svg" alt="Xác minh"
-                                    style="width: 16px; height: 16px;" class="img-icon">
+                                <div class="news-detail-header__author-icon ratio-1x1 overflow-hidden">
+                                    <img src="./img/icon/verified-check.svg" alt="Xác minh" class="img-icon">
+                                </div>
                             </div>
-                            <span class="text-xs text-color-secondary">Viện Nghiên cứu Nông nghiệp Nhiệt đới & Cố vấn
-                                Trưởng ANRO</span>
+                            <span class="news-detail-header__author-role text-xs text-color-secondary">
+                                Viện Nghiên cứu Nông nghiệp Nhiệt đới & Cố vấn Trưởng ANRO
+                            </span>
                         </div>
                     </div>
 
-                    <div class="flex center-ver gap-25 flex-wrap text-xs text-color-secondary">
-                        <span class="flex center-ver gap-5">
-                            <img src="./img/icon/calendar.svg" alt="Ngày đăng" style="width: 16px; height: 16px;"
-                                class="img-icon">
+                    <div class="news-detail-header__stats flex center-ver gap-20 flex-wrap">
+                        <span class="news-detail-header__stat-item un-wrap flex center-ver center-hor gap-5">
+                            <div class="news-detail-header__stat-item__icon ratio-1x1">
+                                <img src="./img/icon/calendar.svg" alt="Ngày đăng" class="img-icon">
+                            </div>
                             24/10/2026
                         </span>
-                        <span class="flex center-ver gap-5">
-                            <img src="./img/icon/clock.svg" alt="Thời gian đọc" style="width: 16px; height: 16px;"
-                                class="img-icon">
+                        <span class="news-detail-header__stat-item un-wrap flex center-ver gap-5">
+                            <div class="news-detail-header__stat-item__icon ratio-1x1">
+                                <img src="./img/icon/clock.svg" alt="Thời gian đọc" class="img-icon">
+                            </div>
                             8 phút đọc sâu
                         </span>
-                        <span class="flex center-ver gap-5">
-                            <img src="./img/icon/eye.svg" alt="Lượt xem" style="width: 16px; height: 16px;"
-                                class="img-icon">
+                        <span class="news-detail-header__stat-item un-wrap flex center-ver gap-5">
+                            <div class="news-detail-header__stat-item__icon ratio-1x1">
+                                <img src="./img/icon/eye.svg" alt="Lượt xem" class="img-icon">
+                            </div>
                             14.820 lượt đọc
                         </span>
                     </div>
@@ -113,11 +117,197 @@
 
             </div>
         </section>
+        <section class=" bg-white">
+            <div class="container-l">
+                <div class="editorial-callout-box item-padding-20 border-radius-15 flex gap-20 pos-rel">
+                    <div class="callout-icon ratio-1x1 border-radius-10 flex ">
+                        <img src="./img/icon/pen-leaf.svg" alt="Tóm tắt chuyên đề" class="img-icon">
+                    </div>
+                    <div class="flex flex-col gap-10 flex-1">
+                        <span class="text-xs uppercase bold text-color-primary">
+                            TÓM TẮT CHUYÊN ĐỀ ẨM THỰC
+                        </span>
+
+                        <blockquote class="text-black medium line-height-1-6 m-0">
+                            "Khác với các dòng gạo nở xốp truyền thống, ST25 mang kết cấu tinh bột Amylose thấp đặc
+                            trưng (15 &ndash; 16%). Việc áp dụng thói quen 'nấu nhiều nước để mềm cơm' chính là nguyên
+                            nhân lớn nhất làm vỡ gãy cấu trúc hạt ngọc, làm bay mất hương lá dứa tự nhiên. Tỷ lệ vàng
+                            chính xác sẽ quyết định chén cơm dẻo mềm nguyên hạt, giữ trọn vị ngọt hậu tinh hoa."
+                        </blockquote>
+
+                        <div class="text-xs text-color-secondary uppercase margin-top-5 flex center-ver gap-10 flex-wrap"
+                            style="letter-spacing: 0.3px;">
+                            <span>ĐỀ TÀI: LÝ THUYẾT THỦY PHÂN TINH BỘT LÚA NƯỚC</span>
+                            <span>&bull;</span>
+                            <span>PHÒNG LAB ẨM THỰC ANRO MEKONG</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="news-detail-body container-padding bg-white">
+            <div class="news-detail-body__container container-l flex flex-wrap gap-20">
+
+                <div class="detail-content__container flex flex-col gap-10 col-70">
+                    <div class="detail-content flex flex-col gap-20 ">
+
+                        <p>
+                            Thế giới ẩm thực Phương Đông ví von một chén cơm chuẩn vị như một tác phẩm diệu khắc vị
+                            giác.
+                            Từng hạt gạo khi chín tới phải vươn mình thon dài, bóng mẩy như phủ một lớp lụa mỏng vô
+                            hình, tơi hạt nhưng chạm đầu lưỡi là sự mềm dẻo lan tỏa. Giống lúa ST25 &ndash; niềm tự hào
+                            của vua lúa Sóc Trăng &ndash; từng đăng quang ngôi vị Gạo Ngon Nhất Thế Giới, nhưng lại là
+                            bài toán làm bối rối không ít bếp trưởng thượng hạng bởi tính hòa nước hoàn toàn khác biệt.
+                        </p>
+                        <p>
+                            Nhiều người tiêu dùng thường thắc mắc: vì sao cùng một bao gạo ST25, có hâm nấu thì hạt cơm
+                            nhão ướt mất tính dẻo, hâm lại khô cứng dù vẫn đong theo lượng nước thông thường? Câu trả
+                            lời không nằm ở chất lượng bao gạo, mà ở sự nhạy cảm của cấu trúc phân tử tinh bột hạt ST25
+                            trước nhiệt lượng và thể tích dung môi.
+                        </p>
+
+                        <figure>
+                            <div>
+                                <img src="./img/article/st25-cooked-rice.jpg" alt="Nấu cơm ST25 sau khi nấu chín">
+                            </div>
+                            <figcaption>
+                                <span>Nấu cơm ST25 sau khi nấu chín: hạt cơm dẻo nguyên hạt, tơi mịn không vón
+                                    cục.</span>
+                                <span>ANRO STUDIO</span>
+                            </figcaption>
+                        </figure>
+
+                        <h2>
+                            1. Bản chất phân tử: Amylose & Amylopectin trong ST25
+                        </h2>
+                        <p>
+                            Hàm lượng Amylose trong ST25 chỉ dao động ở mức 15.2% &ndash; 16.5%. Tỷ lệ thấp này khiến
+                            hạt gạo rất mềm dẻo tự nhiên. Tuy nhiên, liên kết Amylopectin dạng nhánh hấp thụ nước cực
+                            nhanh ở nhiệt độ từ 65&deg;C trở lên. Nếu bạn cho lượng nước theo tỷ lệ cổ điển (1 bát gạo :
+                            1.3 hoặc 1.5 bát nước), hạt gạo sẽ nổ bung thành tế bào, giải phóng gel tinh bột dư thừa ra
+                            ngoài, tạo cảm giác dính ướt nuốt miệng.
+                        </p>
+                        <h3>
+                            Thời điểm thu hoạch quyết định độ ẩm lưu kho
+                        </h3>
+                        <p>
+                            Gạo ST25 chuẩn của ANRO được sấy lạnh vi sinh theo quy trình khép kín, giữ ẩm độ ổn định ở
+                            ngưỡng 13.5% &ndash; 14%. Ở độ ẩm tiêu chuẩn này, hạt gạo giữ nguyên tinh dầu thơm mùi lá
+                            dứa và cốm non. Do đó, hạt gạo hầu như không cần hút quá nhiều nước ngoài để hoàn tất chu
+                            trình chín.
+                        </p>
+                        <blockquote>
+                            "Nấu cơm ST25 không phải là công việc gia chánh thông thường, mà là sự tôn kính dành cho đất
+                            trời phù sa Sóc Trăng. Bớt một thìa nước là hạt khô gãy, thừa một thìa nước là hương cốm
+                            nhạt nhòa. Nắm vững tỷ lệ nước chính là chiếc chìa khóa mở cánh cửa mỹ vị."
+                        </blockquote>
+
+                        <h2>
+                            2. Ứng dụng trong căn bếp hiện đại & Nhà hàng
+                        </h2>
+                        <p>
+                            Đối với các loại nồi cơm điện cao tần IH (Induction Heating), chu trình gia nhiệt đa chiều
+                            thường rút ngắn thời gian bốc hơi. Vì vậy, các đầu bếp tại hệ thống nhà hàng 5 sao hợp tác
+                            cùng ANRO thường áp dụng tỷ lệ 1 : 0.95 đến 1 : 1 để đảm bảo độ nẩy (al dente) của hạt gạo
+                            ST25 khi kết hợp với các loại sốt đậm đà như bò rưới, bò Wagyu sốt tiêu hay đơn giản là cá
+                            kho tộ đậm đà.
+                        </p>
+                        <img src="./img/article/st25-dish-1.jpg" alt="Món ăn từ gạo ST25 1">
+                        <img src="./img/article/st25-dish-2.jpg" alt="Món ăn từ gạo ST25 2">
+
+                    </div>
+
+                    <div class="detail-content__tag flex gap-10 center-ver flex-wrap">
+                        <span>Chủ đề:</span>
+                        <a href="javascript:void()">#GaoST25</a>
+                        <a href="javascript:void()">#TyLeNuocVang</a>
+                        <a href="javascript:void()">#GiaoTanNoi</a>
+                        <a href="javascript:void()">#NongNghiepSach</a>
+                    </div>
+                </div>
+
+
+                <aside class=" col-30 news-detail-sidebar flex flex-col gap-25 pos-stick">
+
+                    <div
+                        class="news-detail-sidebar__product-card bg-white border-radius-15 item-padding-20 flex flex-col gap-15">
+
+                        <div class="flex jus-sb center-ver">
+                            <span class="text-xs bold uppercase text-color-secondary tracking-wide">HẠT NGỌC TRONG
+                                BÀI</span>
+                            <div class="ratio-1x1 overflow-hidden icon-16">
+                                <img src="./img/icon/check-circle.svg" alt="" class="img-icon">
+                            </div>
+                        </div>
+
+                        <div
+                            class="news-detail-sidebar__product-img ratio-16x9 border-radius-10 overflow-hidden bg-light-blue flex center-hor center-ver">
+                            <img src="./img/product/product-1.jpg" alt="Gạo ST25 Ông Cua Hữu Cơ ANRO Reserve"
+                                class="img-content object-contain p-15">
+                        </div>
+
+                        <div class="flex flex-col gap-5">
+                            <span class="text-xs uppercase text-color-secondary bold">DÒNG THƯƠNG HẠNG ĐIỆM TỪ</span>
+                            <h3 class="text-black bold text-base m-0 line-height-1-4">
+                                Gạo ST25 Ông Cua Hữu Cơ ANRO Reserve (Túi 5kg Hút Chân Không)
+                            </h3>
+                            <div class="flex center-ver gap-10 margin-top-5">
+                                <span class="bold text-color-primary fs-22">295.000đ</span>
+                                <span class="text-xs text-color-secondary line-through">340.000đ</span>
+                                <span
+                                    class="text-xs bold text-color-red bg-light-red item-padding-2-5 border-radius-3">-13%</span>
+                            </div>
+                        </div>
+
+                        <ul
+                            class="news-detail-sidebar__product-features list-none flex flex-col gap-10 text-xs text-color-secondary border-top border-padding-top-12">
+                            <li class="flex center-ver gap-10">
+                                <div class="ratio-1x1 icon-14 overflow-hidden">
+                                    <img src="./img/icon/check-circle.svg" alt="Check" class="img-icon">
+                                </div>
+                                <span>Chứng nhận hữu cơ USDA & EU Organic</span>
+                            </li>
+                            <li class="flex center-ver gap-10">
+                                <div class="ratio-1x1 icon-14 overflow-hidden">
+                                    <img src="./img/icon/check-circle.svg" alt="Check" class="img-icon">
+                                </div>
+                                <span>Hạt dài thơm chuẩn mực, hương dứa tự nhiên</span>
+                            </li>
+                            <li class="flex center-ver gap-10">
+                                <div class="ratio-1x1 icon-14 overflow-hidden">
+                                    <img src="./img/icon/check-circle.svg" alt="Check" class="img-icon">
+                                </div>
+                                <span>Đóng gói bảo quản chân không chống ẩm mốc</span>
+                            </li>
+                        </ul>
+
+                        <div class="news-detail-sidebar__product-actions grid grid-cols-2 gap-10 margin-top-5">
+                            <button
+                                class="btn news-detail__contact fill-view text-color-white bg-primary border-radius-5 text-xs bold cursor-pointer item-padding-10 flex center-hor center-ver gap-5">
+                                <span>Liên hệ &rarr;</span>
+                            </button>
+                        </div>
+
+                        <div
+                            class="news-detail-sidebar__delivery text-xs text-color-secondary flex center-hor center-ver gap-10 bg-light-blue border-radius-10 item-padding-10">
+                            <div class="ratio-1x1 overflow-hidden item-padding-5 border-radius-5 icon-24">
+                                <img src="./img/icon/lightning.svg" alt="Flash Delivery" class="img-icon">
+                            </div>
+                            <span>Giao hỏa tốc 2H tại TP.HCM & Hà Nội</span>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+        <section class="discussion-section container-padding bg-white" data-include="./component/cmt.html"></section>
         <section class="blog-section container-padding bg-white" data-include="./component/blogs.html"></section>
-
-
     </main>
     <footer class="bg-primary flex-col gap-30" data-include="./component/footer.html"></footer>
+    <div class="contact-modal-overlay pos-fixed top-0 left-0 flex center-hor center-ver z-index-modal"
+        data-include="./component/popup.html"></div>
     <div class="btntotop__container ratio-1x1 overflow-hidden pos-fixed bg-white"
         data-include="./component/rolltotop.html" id="btnToTop"></div>
     <div class="cta-floating flex flex-col z-index-5 jus-sb" data-include="./component/cta-floating.html"></div>

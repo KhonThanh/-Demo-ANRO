@@ -1,0 +1,91 @@
+<div class="container-l flex flex-col gap-30">
+    <div class="flex jus-sb center-ver flex-wrap gap-10">
+        <div class="flex flex-col gap-5">
+            <h2 class="text-black normalcase fs-22 bold">Cảm nhận của khách hàng</h2>
+            <p class="text-color-secondary text-sm">Chia sẻ trải nghiệm của bạn về sản phẩm</p>
+        </div>
+    </div>
+
+    <div class="bg-light-blue border-radius-15 item-padding-30">
+        <form class="js-validate-form flex flex-col gap-15" novalidate>
+
+            <div class="form-row flex flex-wrap gap-15">
+                <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                    <label class="partner-form-card__label text-sm bold">Họ và tên của bạn *</label>
+                    <input type="text" required placeholder="Ví dụ: Chef Hoàng Anh" data-msg="Vui lòng nhập họ và tên"
+                        class="partner-form-card__input item-padding-10 border-radius-5 bg-white">
+                    <span class="error-msg"></span>
+                </div>
+
+                <div class="partner-form-card__field flex-1 form-group flex flex-col gap-5 col-6">
+                    <label class="partner-form-card__label text-sm bold">Địa chỉ Email (được bảo mật)
+                        *</label>
+                    <input type="email" required placeholder="name@example.com" data-msg="Email không hợp lệ"
+                        class="partner-form-card__input item-padding-10 border-radius-5 bg-white">
+                    <span class="error-msg"></span>
+                </div>
+            </div>
+
+            <div class="partner-form-card__field form-group flex flex-col gap-5 col-1">
+                <label class="partner-form-card__label text-sm bold">Ý kiến hoặc bí quyết nấu của bạn
+                    *</label>
+                <textarea rows="4" required placeholder="Chia sẻ kinh nghiệm căn nước nồi cơm điện gia đình bạn..."
+                    class="partner-form-card__input item-padding-10 border-radius-5 bg-white"></textarea>
+                <span class="error-msg"></span>
+            </div>
+
+            <div class="flex jus-sb center-ver">
+                <button type="submit"
+                    class="bg-primary text-color-white item-padding-10-20 flex center-hor center-ver gap-10 border-radius-5 bold">
+                    <span>Gửi bình luận</span>
+                    <span class="btn-icon">&gt;</span>
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="comment-list flex flex-col gap-20">
+        <div class="comment-item flex gap-15">
+            <div
+                class="comment-item__icon ratio-1x1 border-radius-5 overflow-hidden bg-light-blue flex center-hor center-ver text-color-secondary bold">
+                <span>MT</span>
+            </div>
+            <div class="flex flex-col gap-10 flex-1">
+                <div class="flex jus-sb center-ver flex-wrap gap-5">
+                    <div class="flex center-ver gap-10 flex-wrap">
+                        <strong class="text-black text-md">Mai Tuyết Lan</strong>
+                    </div>
+                    <span class="text-color-secondary text-xs">Hôm qua lúc 19:42</span>
+                </div>
+                <p class="text-black text-sm">
+                    Nhà em dùng nồi Tiger cao tần, trước cứ đong theo vạch có sẵn của nồi làm cơm bị nát bết
+                    cả nhà ai cũng kêu. Hôm nay đọc bài của Giáo sư Long mới dám thử tỷ lệ 1 bát gạo đúng 1
+                    bát nước. Kết quả bất ngờ thật sự, hạt cơm bóng lừ, dài ngoẵng mà nhai dai dẻo thơm nức
+                    mũi! Cảm ơn chuyên trang ANRO nhiều.
+                </p>
+            </div>
+        </div>
+
+        <div class="comment-item flex gap-15">
+            <div
+                class="comment-item__icon ratio-1x1 border-radius-5 overflow-hidden bg-light-blue flex center-hor center-ver text-color-secondary bold">
+                <span>ĐK</span>
+            </div>
+            <div class="flex flex-col gap-10 flex-1">
+                <div class="flex jus-sb center-ver flex-wrap gap-5">
+                    <div class="flex center-ver gap-10 flex-wrap">
+                        <strong class="text-black text-md">Đặng Kim Oanh</strong>
+                    </div>
+                    <span class="text-color-secondary text-xs">2 ngày trước</span>
+                </div>
+                <p class="text-black text-sm">
+                    Nếu nhà em muốn nấu cơm trộn giữa gạo ST25 với gạo lứt đỏ Điện Biên của ANRO thì tỷ lệ
+                    nước có cần tăng lên không ạ thưa thầy?
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>

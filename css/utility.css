@@ -106,6 +106,15 @@
 .col-4 { width: calc((100% - (var(--gap) * 3)) / 4); }
 .col-5 { width: calc((100% - (var(--gap) * 4)) / 5); }
 .col-6 { width: calc((100% - (var(--gap) * 5)) / 6); }
+.col-20 { width: calc(20% - (var(--gap) * 0.2)); }
+.col-80 { width: calc(80% - (var(--gap) * 0.8)); }
+
+.col-30 { width: calc(30% - (var(--gap) * 0.3)); }
+.col-70 { width: calc(70% - (var(--gap) * 0.7)); }
+
+.col-40 { width: calc(40% - (var(--gap) * 0.4)); }
+.col-50 { width: calc(50% - (var(--gap) * 0.5)); }
+.col-60 { width: calc(60% - (var(--gap) * 0.6)); }
 
 /* ========================================== */
 /* 6. KÍCH THƯỚC & ĐỊNH VỊ (SIZING & POS)     */
@@ -274,6 +283,14 @@
     .col-section-2 {width: 100%}
 }
 
+@media (max-width: 800px) {
+  .col-50,
+  .col-20, .col-30, .col-40, 
+  .col-60, .col-70, .col-80{
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
     .item-padding-80-40 { padding: 30px; }
     .text-header-size { font-size: calc(var(--font-size-base) + 10px) !important;}
@@ -295,3 +312,40 @@
 @media (max-width: 480px) {
     .col-2, .col-3, .col-4, .col-5 { width: 100%;}
 }
+
+/* ========================================== */
+/* 12. BỔ SUNG THÊM VÀO 10-5-2026             */
+/* ========================================== */
+
+/* Kích thước Icon & Box */
+.fs-14 { font-size: calc(var(--font-size-base) - 2px); }
+.fs-16 { font-size: var(--font-size-base); }
+.fs-18 { font-size: calc(var(--font-size-base) + 2px); }
+.fs-22 { font-size: calc(var(--font-size-base) + 6px); }
+.fs-26 { font-size: calc(var(--font-size-base) + 10px); }
+.fs-28 { font-size: calc(var(--font-size-base) + 12px); }
+.fs-38 { font-size: calc(var(--font-size-base) + 22px); }
+.fs-52 { font-size: calc(var(--font-size-base) + 36px); }
+
+/* Dynamic Font Sizes & Line Heights */
+.fs-14 { font-size: 14px; }
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+.fs-22 { font-size: 22px; }
+.fs-26 { font-size: 26px; }
+.fs-28 { font-size: 28px; }
+.fs-38 { font-size: 38px; }
+.fs-52 { font-size: 52px; }
+
+/* size icon */
+.icon-14{ max-width: 14px;}
+.icon-16{ max-width: 16px;}
+.icon-24{ max-width: 24px;}
+.icon-32{ max-width: 32px;}
+
+.line-height-1-25 { line-height: 1.25; }
+.line-height-1-3 { line-height: 1.3; }
+.line-height-dropcap { line-height: 0.85; }
+
+/* Màu sắc & Viền chuyên biệt */
+.shadow-sm { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); }

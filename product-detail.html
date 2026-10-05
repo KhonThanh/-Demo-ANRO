@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANRO Rice - Chi tiết sản phẩm</title>
+    <link rel="icon" type="image/png" href="./img/logo/logo-favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/swiper-custom.css">
+    <link rel="stylesheet" href="./css/effect-web.css">
+</head>
+
+<body>
+    <header class="header-section flex-col bg-white" data-include="./component/header.html"></header>
+
+    <main>
+        <section class="flex bg-gray">
+            <div class="container-l nav-bar__container">
+                <a href="index.html" class="nav-bar__item">Trang chủ</a>
+                <a href="javascript:void(0)" class="nav-bar__item">Danh múc sản phẩm</a>
+                <span class="nav-bar__item active">"Tên sản phẩm"</span>
+            </div>
+        </section>
+        <section class="product-hero container-padding bg-white">
+            <div class="container-l">
+                <div class="product-hero__grid fill-view flex gap-20 js-slider-wrapper flex-wrap">
+                    <div class="product-gallery col-50">
+                        <div class="swiper js-gallery-main">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="gallery-main__item ratio-4x3 overflow-hidden border-radius-5">
+                                        <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?q=80&w=800"
+                                            class="img-content" alt="Gạo ST25 Ông Cua Thượng Hạng">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="gallery-main__item ratio-4x3 overflow-hidden border-radius-5">
+                                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=800"
+                                            class="img-content" alt="Hạt gạo thon dài">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="gallery-main__item ratio-4x3 overflow-hidden border-radius-5">
+                                        <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?q=80&w=800"
+                                            class="img-content" alt="Cơm nấu dẻo ngon">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="gallery-main__item ratio-4x3 overflow-hidden border-radius-5">
+                                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800"
+                                            class="img-content" alt="Cánh đồng lúa ST25">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper js-gallery-thumb">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="thumb-item ratio-4x3 overflow-hidden border-radius-5">
+                                        <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?q=80&w=200"
+                                            class="img-content" alt="Thumb 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb-item ratio-4x3 overflow-hidden border-radius-5">
+                                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=200"
+                                            class="img-content" alt="Thumb 2">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb-item ratio-4x3 overflow-hidden border-radius-5">
+                                        <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?q=80&w=200"
+                                            class="img-content" alt="Thumb 3">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb-item ratio-4x3 overflow-hidden border-radius-5">
+                                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=200"
+                                            class="img-content" alt="Thumb 4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="product-info col-50 flex flex-col gap-20">
+                        <span class="product-info__sub">DÒNG TUYỂN CHỌN ĐẶC BIỆT • KỸ SƯ HỒ QUANG CUA</span>
+                        <h1 class="product-info__title text-color-primary">Gạo ST25 Ông Cua Thượng Hạng - Niên Vụ 2026</h1>
+                        <div class="product-info__meta flex gap-20 flex-wrap center-ver">
+                            <div class="rating item-padding-10 border-radius-10 bg-light-blue">
+                                <span class="count">(1.240 đánh giá)</span>
+                            </div>
+                            <span class="sku">Mã sản phẩm: <strong>ANRO-ST25-2026</strong></span>
+                        </div>
+
+                        <!-- Stock Status -->
+                        <div class="product-info__stock text-color-primary medium flex gap-10 center-ver">
+                            <span class="dot border-radius-50 bg-primary border-radius-50"></span> Còn hàng trong kho
+                        </div>
+
+                        <!-- Price Box -->
+                        <div class="price-box item-padding-30 flex flex-col gap-10 bg-light-blue border-radius-10">
+                            <div class="price-box__main flex gap-20 align-end">
+                                <span class="price-current fs-38 bold text-color-primary">195.000đ</span>
+                                <del class="price-old">220.000đ</del>
+                                <span
+                                    class="price-discount item-padding-5-10 bg-primary text-color-white border-radius-50">Tiết
+                                    kiệm 11%</span>
+                            </div>
+                            <div class="price-box__note flex gap-10 center-ver">
+                                <div class="ratio-1x1 overflow-hidden icon-16">
+                                    <img src="./img/icon/truck-fast.svg" alt="">
+                                </div>
+                                <p>Đơn hàng đủ điều kiện miễn phí vận chuyển tận nơi</p>
+                            </div>
+                        </div>
+
+                        <!-- Variants Selection -->
+                        <div class="variant-section flex flex-col gap-10">
+                            <div class="variant-header flex jus-sb center-ver">
+                                <label>Quy cách đóng gói:</label>
+                                <span class="variant-note">Túi hút chân không định hình cao cấp</span>
+                            </div>
+                            <div class="variant-options flex flex-wrap gap-20">
+                                <button class="variant-btn col-3 flex-col flex gap-10 border-radius-5 item-padding-10">
+                                    <span class="name">Túi 2kg</span>
+                                    <span class="price bold fs-18 text-color-primary">95.000đ</span>
+                                </button>
+                                <button
+                                    class="variant-btn col-3 flex-col flex gap-10 border-radius-5 item-padding-10 active">
+                                    <span class="name">Túi 5kg <i class="check-icon">✓</i></span>
+                                    <span class="price bold fs-18 text-color-primary">195.000đ (Chuẩn)</span>
+                                </button>
+                                <button class="variant-btn col-3 flex-col flex gap-10 border-radius-5 item-padding-10">
+                                    <span class="name">Thùng 10kg</span>
+                                    <span class="price bold fs-18 text-color-primary">375.000đ</span>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="btn-contact text-color-white fs-18 medium item-padding-20 bg-primary border-radius-5">
+                            Liên hệ ☎
+                        </button>
+
+                        <button class="btn-buy-now">
+                            ⚡ Mua Ngay - Giao Hỏa Tốc Trong 2 Giờ
+                        </button>
+
+                        <div class="guarantees-grid flex gap-20 flex-wrap">
+                            <div class="guarantee-item col-3 flex gap-10 center-ver">
+                                <div class="icon bg-light-blue ratio-1x1 border-radius-5 icon-32 overflow-hidden item-padding-5">
+                                   <img src="./img/icon/refund.svg" alt="đảm bảo chất lượng dịch vụ" class="img-icon">
+                                </div>
+                                <div class="text flex flex-col gap-5">
+                                    <strong class="text-color-primary fs-16">Đổi trả 7 ngày</strong>
+                                    <span class="fs-14">Miễn phí 100% nếu lỗi hạt</span>
+                                </div>
+                            </div>
+                            <div class="guarantee-item col-3 flex gap-10 center-ver">
+                                <div class="icon bg-light-blue ratio-1x1 border-radius-5 icon-32 overflow-hidden item-padding-5">
+                                    <img src="./img/icon/safe.svg" alt="đảm bảo chất lượng dịch vụ" class="img-icon">
+                                </div>
+                                <div class="text flex flex-col gap-5">
+                                    <strong class="text-color-primary fs-16">Hút chân không</strong>
+                                    <span class="fs-14">Giữ trọn hương tự nhiên</span>
+                                </div>
+                            </div>
+                            <div class="guarantee-item col-3 flex gap-10 center-ver">
+                                <div class="icon bg-light-blue ratio-1x1 border-radius-5 icon-32 overflow-hidden item-padding-5">
+                                    <img src="./img/icon/qr.svg" alt="đảm bảo chất lượng dịch vụ" class="img-icon">
+                                </div>
+                                <div class="text flex flex-col gap-5">
+                                    <strong class="text-color-primary fs-16">Truy xuất QR</strong>
+                                    <span class="fs-14">Chính hãng DNTN Hồ Quang Trí</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="product-tabs-section">
+            <div class="container-l flex-col gap-20">
+
+                <div class="tabs-nav flex gap-10">
+                    <button class="tab-btn active item-padding-10 border-radius-5 font-14" data-target="#tab-1">Đặc tính
+                        & Hương vị</button>
+                    <button class="tab-btn item-padding-10 border-radius-5 font-14" data-target="#tab-2">Hướng dẫn nấu
+                        cơm chuẩn</button>
+                    <button class="tab-btn item-padding-10 border-radius-5 font-14" data-target="#tab-3">Bảng thành phần
+                        dinh dưỡng</button>
+                    <button class="tab-btn item-padding-10 border-radius-5 font-14" data-target="#tab-4">Chứng nhận quốc
+                        tế</button>
+                </div>
+
+                <div id="tab-1" class="tab-content item-padding-40 bg-white border-radius-20 active">
+                    <div class="content-wrapper flex center-ver center-hor gap-20">
+
+                        <div class="left-col product-detail__container flex flex-col gap-10">
+                            <span>CẢM QUAN & PHẨM CHẤT HẠT</span>
+                            <h2>Hạt ngọc thon dài 8.5mm, thơm phức ngát hương lá dứa tự nhiên.</h2>
+                            <p>
+                                Gạo ST25 Ông Cua được vinh danh là Gạo Ngon Nhất Thế Giới với phẩm chất vượt trội: dáng
+                                hạt thon gọn, đều tăm tắp, bề mặt bóng mỡ với đầu phôi hạt còn nguyên vẹn. Khi nấu, hạt
+                                gạo hấp thu nhiệt nhẹ nhàng, giữ nguyên cấu trúc không bị nát hay gãy vụn.
+                            </p>
+
+                            <blockquote>
+                                <h3>Dẻo mềm vượt bậc</h3>
+                                <p>Cơm giữ độ kết dính thanh lịch, không bị dính bết, thơm mềm đậm vị cả khi để qua đêm.
+                                </p>
+                            </blockquote>
+
+                            <blockquote>
+                                <h3>Lá Dứa & Cốm Non</h3>
+                                <p>Hương thơm tinh khiết bung tỏa từ phút đầu đun sôi, không sử dụng hương liệu nhân
+                                    tạo.</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="right-col">
+                            <div class="image-box">
+                                <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?q=80&w=800&auto=format&fit=crop"
+                                    alt="Hạt cơm dẻo ngon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-2" class="tab-content item-padding-40 bg-white border-radius-20-">
+                    <div class="content-wrapper flex center-ver center-hor gap-20">
+                        <div class="left-col product-detail__container flex flex-col gap-10">
+                            <span>QUY TRÌNH CHUẨN VÀNG</span>
+                            <h2>Tỷ lệ 1 : 1 chuẩn xác cho hạt cơm dẻo xốp, trọn dưỡng chất.</h2>
+                            <p>
+                                Nhờ hàm lượng Amylose cân bằng tuyệt vời, gạo ST25 không cần ngâm trước khi nấu và không
+                                tốn nhiều nước. Chỉ cần xả nhẹ qua 1-2 lần nước sạch để giữ trọn lớp cám dinh dưỡng
+                                ngoài cùng.
+                            </p>
+
+                            <blockquote>
+                                <h3>Tỷ lệ 1 gạo : 1 nước</h3>
+                                <p>Đong chính xác theo tỷ lệ thể tích. Nấu bằng nồi cơm điện thông thường hoặc nồi cao
+                                    tần.</p>
+                            </blockquote>
+
+                            <blockquote>
+                                <h3>Ủ ấm 15 phút sau chín</h3>
+                                <p>Khi nồi bật nấc chín, tuyệt đối không mở nắp ngay. Ủ thêm 15 phút để hạt cơm ráo và
+                                    xốp đều.</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="right-col">
+                            <div class="image-box">
+                                <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?q=80&w=800&auto=format&fit=crop"
+                                    alt="Hướng dẫn nấu cơm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-3" class="tab-content item-padding-40 bg-white border-radius-20-">
+                    <div class="content-wrapper flex center-ver center-hor gap-20">
+                        <div class="left-col product-detail__container flex flex-col gap-10">
+                            <span>GIÁ TRỊ DINH DƯỠNG / 100G</span>
+                            <h2>Giàu Protein tự nhiên, chỉ số đường huyết (GI) ở mức an toàn.</h2>
+                            <p>
+                                Gạo ST25 chứa hàm lượng đạm cao hơn 10% so với gạo thông thường, bổ sung nhiều khoáng
+                                chất thiết yếu phù hợp cho chế độ ăn lành mạnh, người tập luyện và người mẫn cảm với
+                                đường huyết.
+                            </p>
+
+                            <blockquote>
+                                <h3>Khoảng 12 - 14% Amylose</h3>
+                                <p>Tạo độ dẻo mềm hoàn hảo, không gây đầy bụng và dễ dàng tiêu hóa cho người già & trẻ
+                                    em.</p>
+                            </blockquote>
+
+                            <blockquote>
+                                <h3>> 8g Protein / 100g</h3>
+                                <p>Cung cấp năng lượng bền bỉ, giàu Vitamin B1, B3 và các vi chất sắt, magie từ phôi
+                                    gạo.</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="right-col">
+                            <div class="image-box">
+                                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=800&auto=format&fit=crop"
+                                    alt="Dinh dưỡng gạo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-4" class="tab-content item-padding-40 bg-white border-radius-20-">
+                    <div class="content-wrapper flex center-ver center-hor gap-20">
+                        <div class="left-col product-detail__container flex flex-col gap-10">
+                            <span>XÁC NHẬN CHẤT LƯỢNG</span>
+                            <h2>Cam kết 3 Không: Không hóa chất, không dư lượng, không hương liệu.</h2>
+                            <p>
+                                Sản xuất trên mô hình canh tác Lúa - Tôm sinh thái khép kín tại vùng ven biển Sóc Trăng.
+                                Đạt đầy đủ các tiêu chuẩn kiểm định nghiêm ngặt nhất để xuất khẩu sang thị trường Châu
+                                Âu, Mỹ và Nhật Bản.
+                            </p>
+
+                            <blockquote>
+                                <h3>GlobalGAP & ISO 22000</h3>
+                                <p>Quy trình đóng gói hút chân không hiện đại giúp bảo quản tự nhiên đến 12 tháng.</p>
+                            </blockquote>
+
+                            <blockquote>
+                                <h3>World's Best Rice</h3>
+                                <p>Được công nhận tại Hội nghị Thương mại Gạo Thế giới do The Rice Trader tổ chức.</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="right-col">
+                            <div class="image-box">
+                                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop"
+                                    alt="Cánh đồng sinh thái">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="discussion-section container-padding bg-white" data-include="./component/cmt.html"></section>
+        <section class="products-section container-padding bg-white" data-include="./component/slide-product.html">
+        </section>
+    </main>
+    <footer class="bg-primary flex-col gap-30" data-include="./component/footer.html"></footer>
+    <div class="contact-modal-overlay pos-fixed top-0 left-0 flex center-hor center-ver z-index-modal"
+        data-include="./component/popup.html"></div>
+    <div class="btntotop__container ratio-1x1 overflow-hidden pos-fixed bg-white"
+        data-include="./component/rolltotop.html" id="btnToTop">
+    </div>
+
+    <div class="cta-floating flex flex-col z-index-5 jus-sb" data-include="./component/cta-floating.html"></div>
+
+    <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer type="text/javascript" src="./js/frontend.js"></script>
+</body>
+
+</html>

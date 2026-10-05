@@ -400,9 +400,12 @@ function initSwiperSlider({
     const wrapper = container.querySelector('.swiper-wrapper');
     if (!wrapper) return;
 
-    // 2. Khôi phục DOM gốc (Đã sửa: Lưu trực tiếp vào JS Object property để không bị hiện lên HTML)
+    // 2. Khôi phục DOM gốc (Loại bỏ slide duplicate nếu re-init)
     if (!container._originalHtml) {
-      container._originalHtml = wrapper.innerHTML;
+      // Dọn dẹp slide clone do Swiper loop tạo ra trước khi lưu HTML gốc
+      const tempWrapper = wrapper.cloneNode(true);
+      tempWrapper.querySelectorAll('.swiper-slide-duplicate').forEach(el => el.remove());
+      container._originalHtml = tempWrapper.innerHTML;
     } else {
       wrapper.innerHTML = container._originalHtml;
     }
@@ -441,7 +444,7 @@ function initSwiperSlider({
       });
     }
 
-    // 5. Điều kiện kích hoạt Slide: Nếu số item <= số slidesPerView tối đa thì TẮT loop & autoplay
+    // 5. Điều kiện kích hoạt Slide
     const isEnoughSlides = realSlideCount > maxSlidesPerView;
     let finalLoop = isThumb ? false : (loop && isEnoughSlides);
     let finalRewind = isThumb ? false : (rewind && isEnoughSlides);
@@ -486,7 +489,10 @@ function initSwiperSlider({
       spaceBetween: spaceBetween,
       loop: finalLoop,
       rewind: finalRewind,
-      watchOverflow: true, // Tự động khóa slide & ẩn Nav/Pagination khi số item <= slidesPerView
+      watchOverflow: true,
+      // Tự động lắng nghe thay đổi DOM/Tab ẩn để cập nhật lại layout
+      observer: true,
+      observeParents: true,
       navigation: nav,
       pagination: pag,
       breakpoints: finalBreakpoints,
@@ -1117,6 +1123,36 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
 
+    const galleryThumbSwiper = initSwiperSlider({
+      mainSelector: '.js-gallery-thumb',
+      wrapperSelector: '.js-slider-wrapper',
+      slidesPerView: 4,
+      spaceBetween: 10,
+      isThumb: true,
+      watchSlidesProgress: true, 
+      slideThumbActiveClass: 'swiper-slide-thumb-active',
+      breakpoints: {
+        320: { slidesPerView: 4, spaceBetween: 8 },
+        768: { slidesPerView: 4, spaceBetween: 12 }
+      }
+    });
+
+    initSwiperSlider({
+      mainSelector: '.js-gallery-main',
+      wrapperSelector: '.js-slider-wrapper',
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: false,
+      autoplay: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: Array.isArray(galleryThumbSwiper) ? galleryThumbSwiper[0] : galleryThumbSwiper
+      }
+    });
+
     initToggleSystem([
       {
         trigger: ".menu-toggle__button",
@@ -1148,6 +1184,28 @@ document.addEventListener("DOMContentLoaded", () => {
         overlayCloses: true,
         closeOnEsc: true
       },
+       {
+        trigger: ".btn-contact",
+        target: ".contact-modal-overlay",
+        closeBtn: ".contact-modal-close",
+        innerSelector: ".contact-modal-card",
+        behavior: "toggle",
+        activeClass: "active",
+        closeOnOutside: true,
+        overlayCloses: true,
+        closeOnEsc: true
+      },
+      {
+        trigger: ".news-detail-sidebar__product-actions .news-detail__contact",
+        target: ".contact-modal-overlay",
+        closeBtn: ".contact-modal-close",
+        innerSelector: ".contact-modal-card",
+        behavior: "toggle",
+        activeClass: "active",
+        closeOnOutside: true,
+        overlayCloses: true,
+        closeOnEsc: true
+      },
       {
         trigger: ".pagination .btn-page",
         behavior: "activate",
@@ -1160,6 +1218,22 @@ document.addEventListener("DOMContentLoaded", () => {
         activeClass: "active",
       },
 
+      {
+        trigger: ".news-detail-header__action-btn",
+        target: ".news-detail-header__action-container",
+        behavior: "toggle",
+        activeClass: "active",
+        closeOnOutside: true,
+         closeOnEsc: true
+      },
+
+      {
+        trigger: ".product-tabs-section .tab-btn",
+        target: ".product-tabs-section .tab-content",
+        activeClass: "active",
+        behavior: "activate" 
+      }
+
     ]);
 
     // 🟡 roll to the top
@@ -1168,18 +1242,6 @@ document.addEventListener("DOMContentLoaded", () => {
       triggerPx: 1200,
       offTriggerPx: 1000,
       scrollTo: 0,
-    });
-    watchScrollTrigger({
-      target: '.menu-top__logo',
-      triggerPx: 300,
-      offTriggerPx: 150,
-      className: 'active'
-    });
-    watchScrollTrigger({
-      target: '.menu-top__container',
-      triggerPx: 300,
-      offTriggerPx: 150,
-      className: 'active'
     });
     // ✨ 4️⃣ HIỆU ỨNG ẢNH & REVEAL
     applyImageEnhancements();
