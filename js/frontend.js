@@ -1207,6 +1207,16 @@ document.addEventListener("DOMContentLoaded", () => {
         closeOnEsc: true
       },
       {
+        trigger: ".contact-modal-card__btn",
+        target: ".contact-modal-overlay",
+        closeBtn: ".popup-success__icon-close",
+        behavior: "toggle",
+        activeClass: "success",
+        closeOnOutside: true,
+        overlayCloses: true,
+        closeOnEsc: true
+      },
+      {
         trigger: ".pagination .btn-page",
         behavior: "activate",
         activeClass: "active",
