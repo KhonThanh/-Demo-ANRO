@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANRO | Liên Hệ & Đối Tác</title>
+    <link rel="icon" type="image/png" href="./img/logo/logo-favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/swiper-custom.css">
+    <link rel="stylesheet" href="./css/effect-web.css">
+</head>
+
+<body>
+    <header class="header-section flex-col bg-white" data-include="./component/header.html"></header>
+
+    <main>
+        <section class="flex bg-gray">
+            <div class="container-l nav-bar__container">
+                <a href="javascript:void(0)" class="nav-bar__item">Trang chủ</a>
+                <a href="javascript:void(0)" class="nav-bar__item">Website đang bảo trì</a>
+            </div>
+        </section>
+        <section class="flex flex-col gap-20 container-padding">
+            <div class="maintenance-container container-l">
+                <div class="ratio-16x9 border-radius overflow-hidden">
+                    <img src="./img/maintenance/SVG/img.svg" alt="" class="img-icon">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary flex-col gap-30" data-include="./component/footer.html"></footer>
+
+    <div class="btntotop__container ratio-1x1 overflow-hidden pos-fixed bg-white"
+        data-include="./component/rolltotop.html" id="btnToTop">
+    </div>
+
+    <div class="cta-floating flex flex-col z-index-5 jus-sb" data-include="./component/cta-floating.html"></div>
+
+    <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer type="text/javascript" src="./js/frontend.js"></script>
+</body>
+
+</html>
